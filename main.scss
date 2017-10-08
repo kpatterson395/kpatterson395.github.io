@@ -1,0 +1,136 @@
+$accent: rgba(247, 66, 98, 0.57);
+$standard-box-shadow: 1px 2px 12px 0px rgba(0,0,0,0.08);
+$primary-gradient: linear-gradient(115deg, rgba(0, 0, 0, 0.0), $accent 150%);
+$bg-color: rgba(247, 66, 98, 0.22);
+
+$body-font: 'Ubuntu', sans-serif;
+$header-font: 'Comfortaa', cursive;
+$baseline-font-size: 16px;
+
+html, body{
+
+	height: 100%;
+}
+
+body{
+
+	/*background-color: green;*/
+	font-family: sans-serif;
+	margin: 0px;
+
+	// background: $primary-gradient;
+	background: $bg-color;
+	font-family: $body-font;
+	font-size: $baseline-font-size;
+}
+
+h1, h2, h3, h4, h5{
+
+	font-family: $header-font;
+}
+
+h1{
+
+	font-size: 3.5em;
+}
+
+h2{
+
+	font-size: 3.0em;
+}
+
+h3{
+
+	font-size: 2.5em;
+}
+
+h4{
+
+	font-size: 2.0em;
+}
+
+h5{
+
+	font-size: 1.5em;
+}
+
+p{
+
+	opacity: 0.8;
+	line-height: 1.7em;
+}
+
+a{
+
+	color: $accent;
+	text-decoration: none;
+
+	&:hover{
+
+		cursor: pointer;
+		color: black;
+	}
+}
+
+.highlight{
+
+	color: $accent;
+}
+
+#wrapper{
+
+	max-width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.section{
+
+	min-height: 500px;
+
+	&.section-full{
+
+		min-height: 100%;
+	}
+
+	&.vcenter{
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content{
+
+		min-height: 1px;
+	}
+}
+
+#hero{
+
+	// animation-duration: 5s;
+
+	.content{
+
+		max-width: 500px;
+		box-shadow: $standard-box-shadow;
+		padding: 40px;
+
+		border-radius: 10px;
+
+		background-color: white;
+
+		// height: 300px;
+	}
+
+	h3{
+
+		margin-top: 0px;
+		margin-bottom: 25px;
+	}
+
+	p{
+
+		margin-bottom: 0px;
+	}
+}

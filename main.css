@@ -1,0 +1,82 @@
+html, body {
+  height: 100%; }
+
+body {
+  /*background-color: green;*/
+  font-family: sans-serif;
+  margin: 0px;
+  background: rgba(247, 66, 98, 0.22);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Comfortaa", cursive; }
+
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 3.0em; }
+
+h3 {
+  font-size: 2.5em; }
+
+h4 {
+  font-size: 2.0em; }
+
+h5 {
+  font-size: 1.5em; }
+
+p {
+  opacity: 0.8;
+  line-height: 1.7em; }
+
+a {
+  color: rgba(247, 66, 98, 0.57);
+  text-decoration: none; }
+  a:hover {
+    cursor: pointer;
+    color: black; }
+
+.highlight {
+  color: rgba(247, 66, 98, 0.57); }
+
+#wrapper {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto; }
+
+.section {
+  min-height: 500px; }
+  .section.section-full {
+    min-height: 100%; }
+  .section.vcenter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .section .content {
+    min-height: 1px; }
+
+#hero .content {
+  max-width: 500px;
+  -webkit-box-shadow: 1px 2px 12px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 2px 12px 0px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  border-radius: 10px;
+  background-color: white; }
+
+#hero h3 {
+  margin-top: 0px;
+  margin-bottom: 25px; }
+
+#hero p {
+  margin-bottom: 0px; }
