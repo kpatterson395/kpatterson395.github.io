@@ -93,4 +93,5 @@ a {
       margin-bottom: 40px;
       text-align: center; }
     #hero .content p {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      max-width: 550px; } }
