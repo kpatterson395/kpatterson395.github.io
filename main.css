@@ -80,3 +80,17 @@ a {
 
 #hero p {
   margin-bottom: 0px; }
+
+@media screen and (max-width: 768px) {
+  #hero .content {
+    padding: 60px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    #hero .content h3 {
+      margin-bottom: 40px;
+      text-align: center; }
+    #hero .content p {
+      margin: 0 auto; } }
