@@ -8,7 +8,7 @@ var winningArr=[["#top-left", "#middle-left", "#bottom-left"],
                 ["#top-right", "#middle-right", "#bottom-right"],
                 ["#top-left", "#top-middle", "#top-right"],
                 ["#middle-left", "#middle-middle", "#middle-right"],
-                ["#bottom-left", "#bottom-middle", "bottom-right"],
+                ["#bottom-left", "#bottom-middle", "#bottom-right"],
                 ["#top-left", "#middle-middle", "#bottom-right"],
                 ["#top-right", "#middle-middle", "#bottom-left"]
                ];
