@@ -55,8 +55,10 @@ $( document ).ready(function() {
    //CLEAR ENTRY BUTTON
 
        if(val === 'ce'){
+         log=log.substring(0,(log.length-input.length));
          input="";
          $("#result").html(0);
+         $("#history").html(log);
 
        }
 
