@@ -1,0 +1,20 @@
+header {
+  margin: 20px 0 5px 0;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative; }
+  header ul {
+    list-style-type: none;
+    display: inline-block; }
+    header ul li {
+      font-size: 12px;
+      display: inline;
+      padding: 0 10px; }
+  header div {
+    display: inline-block;
+    text-align: center; }
+    header div h1 {
+      margin-left: 25%; }
+
+/*# sourceMappingURL=main.css.map */

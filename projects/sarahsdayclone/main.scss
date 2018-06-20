@@ -1,0 +1,34 @@
+$main-color1: white;
+$main-color2: #ffe1de;
+$main-font-color: #000;
+
+$primary-font-family: 'Source Sans Pro', sans-serif;
+
+
+header {
+	margin: 20px 0 5px 0;
+	font-family: $primary-font-family;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	ul {
+
+		  list-style-type: none;
+		  display: inline-block;
+   		  li {
+		  	font-size: 12px;
+		    display: inline;
+		    padding: 0 10px;
+
+		}
+	}
+	div {
+		display: inline-block;
+		text-align: center;
+		h1 {
+			margin-left: 25%;
+		}
+	}
+
+
+}
