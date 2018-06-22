@@ -15,10 +15,6 @@ $(document).ready(function() {
   });
 
 
-// $( window ).scroll(function() {
-// 	$("header").css("background-color", "rgba(255, 255, 255, 0.5)")
-
-// });
 
 
 
