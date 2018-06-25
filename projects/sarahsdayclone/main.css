@@ -268,6 +268,13 @@ header {
     height: 50px;
     width: 200px;
     margin: auto 20px; }
+  @media screen and (max-width: 375px) {
+    .email-sign-up p input {
+      width: 200px;
+      font-size: 15px;
+      margin: auto 0; }
+    .email-sign-up p button {
+      margin: auto 0; } }
 
 .contact {
   letter-spacing: 3px;

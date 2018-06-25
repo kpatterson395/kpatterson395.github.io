@@ -376,6 +376,23 @@ header {
 
 		}
 	}
+
+	@media screen and (max-width: 375px){
+
+		p {
+			input {
+				width: 200px;
+				font-size: 15px;
+				margin: auto 0;
+			}
+			button {
+				margin: auto 0;
+	
+			}
+		}
+
+	}
+
 }
 
 
