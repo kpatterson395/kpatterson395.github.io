@@ -2,16 +2,24 @@ var slideIndex = 1;
 var dotIndex= 1;
 var slides = document.getElementsByClassName("slide");
 var dots = document.getElementsByClassName("dot");
+var navDisplay = false;
 
 $(document).ready(function() {
 
+
+
+  $(".navIcons").on("click", function(){
+  	displayNav();
+
+  });
+
   $(".next").on("click", function(){
-    plusSlides(1)
+    plusSlides(1);
   });
 
 
   $(".prev").on("click", function(){
-    plusSlides(-1)
+    plusSlides(-1);
   });
 
 
@@ -34,7 +42,26 @@ $( window ).scroll(function() {
 
 });
 
+function displayNav() {
+	if (!navDisplay){
+		$("#header-list1").css("display", "block");
+	  	$("#header-list2").css("display", "block");
+	  	$("#header-logo").css("display", "none");
+	  	$(".fa-bars").css("display", "none");
+	  	$(".fa-times").css("display", "block");
+	  	navDisplay= true;
+	}
+	else {
+		$("#header-list1").css("display", "none");
+	  	$("#header-list2").css("display", "none");	
+	  	$("#header-logo").css("display", "inline-block");
+	  	$(".fa-bars").css("display", "block");
+	  	$(".fa-times").css("display", "none");
+	  	navDisplay = false;	
+	}
 
+
+}
 
 function plusSlides(n) {
 	dotIndex+=n;
@@ -62,3 +89,6 @@ function showSlides(n) {
   dots[dotIndex-1].style.backgroundColor = "rgba(255, 255, 255, 1)";
 
 }
+
+
+

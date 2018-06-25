@@ -20,7 +20,8 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  overflow-x: hidden; }
 
 header {
   padding: 0 0 5px 0;
@@ -46,6 +47,38 @@ header {
       margin-left: 25%;
       font-size: 30px;
       transition: font-size 0.5s ease-in; }
+  header .fa-bars {
+    display: none; }
+  header .fa-times {
+    display: none; }
+  @media screen and (max-width: 768px) {
+    header #header-list1, header #header-list2 {
+      display: none; }
+      header #header-list1 li, header #header-list2 li {
+        font-size: 12px;
+        padding: 0 5px;
+        display: block; }
+    header .fa-bars {
+      display: inline-block;
+      position: absolute;
+      font-size: 30px;
+      top: 40%;
+      left: 10%; }
+    header .fa-times {
+      position: absolute;
+      font-size: 30px;
+      top: 10%;
+      left: 90%; } }
+  @media screen and (max-width: 375px) {
+    header div h1 {
+      font-size: 15px; }
+    header .fa-bars {
+      font-size: 20px; }
+    header .fa-times {
+      position: absolute;
+      font-size: 20px;
+      top: 10%;
+      left: 90%; } }
 
 .slideshow {
   width: 100%;
@@ -94,6 +127,12 @@ header {
       transition: background-color 0.6s ease; }
     .slideshow .slideDots #main {
       background: white; }
+  @media screen and (max-width: 375px) {
+    .slideshow {
+      height: 500px; }
+      .slideshow img {
+        width: 375px;
+        max-height: 500px; } }
 
 .prev, .next {
   cursor: pointer;
@@ -137,6 +176,18 @@ header {
   .photo-gallery .photo-gallery-img .photo-gallery-txt span {
     color: black;
     font-size: 18px; }
+  @media screen and (max-width: 375px) {
+    .photo-gallery {
+      padding-left: 0;
+      margin-left: 0; }
+      .photo-gallery .photo-gallery-img {
+        width: 375px;
+        margin-left: 0;
+        padding-left: 0; }
+        .photo-gallery .photo-gallery-img img {
+          width: 375px;
+          margin-left: 0;
+          padding-left: 0; } }
 
 #gallery2 {
   background-color: #ffe1de;
