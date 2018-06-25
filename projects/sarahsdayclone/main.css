@@ -52,7 +52,11 @@ header {
   header .fa-times {
     display: none; }
   @media screen and (max-width: 768px) {
+    header div h1 {
+      margin-left: 13%;
+      margin-right: 13%; }
     header #header-list1, header #header-list2 {
+      text-align: left;
       display: none; }
       header #header-list1 li, header #header-list2 li {
         font-size: 12px;
@@ -71,7 +75,9 @@ header {
       left: 90%; } }
   @media screen and (max-width: 375px) {
     header div h1 {
-      font-size: 15px; }
+      font-size: 15px;
+      margin-left: 13%;
+      margin-right: 13%; }
     header .fa-bars {
       font-size: 20px; }
     header .fa-times {
@@ -269,12 +275,14 @@ header {
     width: 200px;
     margin: auto 20px; }
   @media screen and (max-width: 375px) {
-    .email-sign-up p input {
-      width: 200px;
-      font-size: 15px;
-      margin: auto 0; }
-    .email-sign-up p button {
-      margin: auto 0; } }
+    .email-sign-up {
+      padding: 0; }
+      .email-sign-up p input {
+        width: 200px;
+        font-size: 15px;
+        margin: auto 0; }
+      .email-sign-up p button {
+        margin: 10px 0; } }
 
 .contact {
   letter-spacing: 3px;
