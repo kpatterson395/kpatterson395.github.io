@@ -53,20 +53,49 @@ html, body {
     left: 5%;
     height: 100px;
     width: 80px; }
-  .navBar .navBar-links {
+  .navBar ul {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 10%;
     list-style-type: none;
-    display: inline-block; }
-    .navBar .navBar-links li {
+    display: inline-block;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+    .navBar ul li {
       font-size: 12px;
       display: inline;
-      padding: 0 5px;
+      padding: 10px 10px;
       text-transform: uppercase;
       font-family: "Roboto", sans-serif;
       font-size: 15px;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      transition: background 1s linear, color 1s linear; }
+      .navBar ul li:hover {
+        color: white;
+        background: black;
+        cursor: pointer; }
+  .navBar .menu-dropdown {
+    position: absolute;
+    top: 100%;
+    background: url("https://images.unsplash.com/photo-1494221967057-95ec3a1b5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dbb73d3a65efa290c0efb03aa4ed9975&auto=format&fit=crop&w=2851&q=80");
+    background: cover;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    height: 600px;
+    width: 100%;
+    display: inline;
+    z-index: 999;
+    opacity: 0;
+    visibility: "hidden";
+    transition: visibility 1s linear, opacity 1s linear; }
+    .navBar .menu-dropdown ul {
+      width: 90%;
+      left: 0;
+      list-style-type: none;
+      background: black;
+      top: 0; }
+      .navBar .menu-dropdown ul li {
+        display: block; }
   .navBar .findStore {
     position: absolute;
     right: 5%;
@@ -272,7 +301,7 @@ footer {
       position: absolute;
       font-family: "Roboto", sans-serif;
       diplay: inline-block;
-      font-weight: 700;
+      font-weight: 900;
       font-size: 35px;
       text-transform: uppercase;
       transform: rotate(-90deg);
