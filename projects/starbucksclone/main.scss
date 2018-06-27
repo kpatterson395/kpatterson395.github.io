@@ -58,6 +58,7 @@ $hero-font2: 'Crete Round', serif;
 html, body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 
@@ -70,6 +71,9 @@ html, body {
 .navBar {
 	height: 100px;
 	position: relative;
+	.fa-bars {
+		display: none;
+	}
 	img {
 		position: absolute;
 		top: 10%;
@@ -91,7 +95,6 @@ html, body {
 		    padding: 10px 10px;
 		    text-transform: uppercase;
 		    font-family: $header-font;
-		    font-size: 15px;
 		    letter-spacing: 3px;
 		    transition: background 1s linear, color 1s linear;
 		    &:hover {
@@ -154,7 +157,108 @@ html, body {
 			color: $accent-color1;
 		}
 	}
-	
+	@media screen and (max-width: 375px){
+		.navBar-links{
+			display: none;
+			position: absolute;
+			z-index: 99;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 300px; 
+			list-style-type: none;
+			background-color: black;
+			color: white;
+			.menu-head {
+			  	font-size: 8px;
+			    display: inline-block;
+			    padding: 0 10px;
+			    margin-bottom: 5px;
+			    &:hover {
+			    	color: black;
+			    	background: white;
+			    }
+
+			}
+		}
+		.ctrlNav {
+			position: absolute;
+			left: 85%;
+			top: 30%;
+			font-size: 30px;
+		}
+		.fa-bars {
+			display: block;
+			top: 60%;
+			left: 85%;
+			color: $accent-color1;
+
+		}
+		.fa-times {
+			display: none;
+			color: white;
+			z-index: 99;
+			top: 60%;
+
+		}
+		.menu-dropdown {
+			width: 100%;
+			height: 600px;
+			background: black;
+
+		}
+	}
+	@media screen and (max-width: 768px){
+		.navBar-links{
+			display: none;
+			position: absolute;
+			z-index: 99;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 300px; 
+			list-style-type: none;
+			background-color: black;
+			color: white;
+   		li {
+		  	font-size: 12px;
+		    display: inline-block;
+		    padding: 10px 10px;
+		    margin-bottom: 5px;
+		    &:hover {
+		    	color: black;
+		    	background: white;
+		    }
+
+		}
+		}
+		.ctrlNav {
+			position: absolute;
+			left: 85%;
+			top: 30%;
+			font-size: 30px;
+		}
+		.fa-bars {
+			display: block;
+			top: 60%;
+			left: 85%;
+			color: $accent-color1;
+
+		}
+		.fa-times {
+			display: none;
+			color: white;
+			z-index: 99;
+			top: 60%;
+
+		}
+		.menu-dropdown {
+			width: 100%;
+			height: 600px;
+			background: black;
+
+		}
+	}
 }
 
 
@@ -220,6 +324,21 @@ html, body {
 
 
 	}
+	@media screen and (max-width: 375px){
+
+		.hero-txt-1{
+			font-size: 30px;
+			top: 5%;
+			left: 5%;
+		}
+
+		.hero-txt-2{
+			right: 30%;
+
+		}
+
+
+	}
 
 }
 
@@ -279,17 +398,93 @@ html, body {
 			}
 		}
 	}
+	@media screen and (max-width: 768px){
+		img {
+			height: 30%;
+		 	top: 40%;	
+		 	left: 5%;
+		}
+	}
+
+	@media screen and (max-width: 375px){
+
+		.chalkboard-info {
+			width: 50%;
+			font-size: 10px;
+			h3 {
+				font-size: 20px;
+			}
+			button {
+				width: 100px;
+				height: 20px;
+			}
+		}
+	}
 }
 
 .info1 {
 	background-color: #edeff2;
 	@extend %info-div;
+	@media screen and (max-width: 768px){
+		img {
+
+			height: 50%;
+			width: 35%;
+		}
+	}
+
+	@media screen and (max-width: 375px){
+		img {
+			top: 60%;
+			height: 30%;
+			width: 50%;
+		}
+			.info-txt {
+				position: absolute;
+				width: 35%;
+				right: 13%;
+				top: 10%;
+				font-size: 13px;
+				h3 {
+					font-size: 20px;
+				}
+
+			}
+	}
+
 }
 
 
 .info2 {
 	background-color: #f7f7f7;
 	@extend %info-div;
+	@media screen and (max-width: 768px){
+		img {
+
+			height: 50%;
+			width: 35%;
+			top: 20%;
+		}
+	}
+	@media screen and (max-width: 375px){
+		img {
+			top: 60%;
+			height: 30%;
+			width: 50%;
+			left: 0;
+		}
+			.info-txt {
+				position: absolute;
+				width: 35%;
+				right: 13%;
+				top: 10%;
+				font-size: 13px;
+				h3 {
+					font-size: 20px;
+				}
+
+			}
+	}
 }
 
 
@@ -312,7 +507,6 @@ html, body {
 			
 		}		
 	}
-
 	.email-join {
 		position: absolute;
 		width: 50%;
@@ -366,6 +560,45 @@ html, body {
 			}
 		}
 	}
+	@media screen and (max-width: 375px){
+		.social-media {
+			width: 20%;
+			a {
+				font-size: 15px;
+				display: inline-block;
+			}		
+		}
+		.email-join {
+			width: 50%;
+			left: 50%;
+			top: 15%;
+
+			input[name="email-address"] {
+				width: 150px;
+				margin: 0 5px;
+			}
+		}
+	}
+	@media screen and (max-width: 768px){
+		height: 250px;
+		.social-media {
+			a {
+				font-size: 15px;
+			}		
+		}
+
+		.email-join {
+				input[name="email-address"] {
+				width: 150px;
+				margin: 0 5px;
+			}
+
+			p {
+				font-size: 8px;
+			}
+		}
+
+	}
 }
 
 
@@ -410,6 +643,12 @@ footer {
     		-webkit-transform: rotate(-90deg); /* Safari */
   			right: 0;
     		top: 100px;
+    		@media screen and (max-width: 375px){
+    			display: none;
+    		}
+    		@media screen and (max-width: 768px){
+    			display: none;
+    		}
 		}
 	}
 
@@ -435,6 +674,23 @@ footer {
 				font-size: 9px;
 			}
 
+	}
+	@media screen and (max-width: 375px){
+		height: 700px;
+		
+		.contacts {
+			ul {
+				width: 30%;
+				font-size: 10px;
+				h3{
+					font-size: 11px;
+				}
+			}	
+		}
+		.bottom-footer {
+			font-size: 10px;
+			line-height: 15px;
+		}
 	}
 }
 
