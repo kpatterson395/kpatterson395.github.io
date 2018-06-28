@@ -1,0 +1,221 @@
+#main-info .customer-fav p, #main-info #find p, #main-info #collections p {
+  margin-left: 10%;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+body {
+  background: #c1d5d5 url(https://www.batdorfcoffee.com/skin/frontend/default/batdorfc/images/map-bg2.png) center top no-repeat;
+  color: #432f02; }
+
+header {
+  background: #a4a9b2;
+  width: 100%;
+  margin-top: 10px;
+  height: 80px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  position: relative; }
+  header div {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    letter-spacing: 2px; }
+    header div span {
+      transition: color 0.5s ease-out; }
+      header div span:hover {
+        color: #56d8d6;
+        cursor: pointer; }
+    header div .fa-shopping-cart {
+      color: #56d8d6;
+      font-size: 20px; }
+
+#tabs {
+  positon: relative;
+  width: 80%;
+  margin-left: 10%; }
+  #tabs #tab-menu {
+    margin: 0; }
+    #tabs #tab-menu .menu {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 30px;
+      margin: 0 5px;
+      width: auto;
+      background: #3d2c20;
+      color: #56d8d6;
+      font-family: 'Crete Round', serif;
+      text-transform: uppercase;
+      font-size: 15px;
+      border-radius: 10px 10px 0 0; }
+      #tabs #tab-menu .menu:hover {
+        background: #efcb94;
+        color: #3d2c20; }
+  #tabs .dropdown {
+    z-index: 999;
+    visibility: "hidden";
+    opacity: 0;
+    position: absolute;
+    background: #efcb94;
+    color: #3d2c20;
+    margin-top: 10px;
+    margin-left: -30px;
+    width: 300px; }
+    #tabs .dropdown ul {
+      margin: 0;
+      list-style-type: none; }
+      #tabs .dropdown ul li {
+        display: block; }
+  @media screen and (max-width: 1238px) {
+    #tabs #tab-menu .menu {
+      font-size: 10px; } }
+  @media screen and (max-width: 768px) {
+    #tabs #tab-menu .menu {
+      font-size: 10px;
+      padding: 10px 10px; } }
+
+#intro {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 0; }
+  #intro img {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    height: auto;
+    width: 35%; }
+  #intro #search {
+    position: absolute;
+    padding: 15px 25px;
+    margin-left: 5px;
+    top: 10%;
+    right: 10%;
+    background: rgba(164, 169, 178, 0.8);
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 40%;
+    width: 35%; }
+    #intro #search input {
+      margin-top: 10px;
+      display: block;
+      width: 80%;
+      height: 30px;
+      border: 0px solid gray;
+      border-radius: 5px;
+      font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      padding-left: 5px; }
+
+#main-info {
+  width: 80%;
+  margin-left: 10%;
+  height: 1900px;
+  background: rgba(164, 169, 178, 0.6);
+  position: relative; }
+  #main-info img {
+    margin-top: 50px;
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-left: 10%; }
+  #main-info #tagLine {
+    margin-top: 50px;
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin-left: 25%; }
+  #main-info .customer-fav {
+    position: relative;
+    margin-top: 50px; }
+    #main-info .customer-fav #fav-img {
+      position: relative;
+      width: 80%;
+      margin-left: 10%; }
+      #main-info .customer-fav #fav-img .divider {
+        width: 1px;
+        height: 300px;
+        background: yellow;
+        display: inline-block;
+        margin: 0 24px 12.5px 24px; }
+      #main-info .customer-fav #fav-img img {
+        positon: absolute;
+        height: 325px;
+        width: auto;
+        margin: auto; }
+  #main-info #find {
+    position: relative; }
+    #main-info #find img {
+      width: 80%;
+      margin-top: 0; }
+
+footer {
+  position: relative;
+  background: #a4a9b2;
+  width: 100%;
+  height: 350px; }
+  footer #info-links {
+    position: absolute;
+    width: 80%;
+    left: 10%; }
+    footer #info-links ul {
+      list-style-type: none;
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 75px; }
+      footer #info-links ul h3 {
+        font-family: 'Crete Round', serif;
+        text-decoration: none;
+        font-size: 15px; }
+      footer #info-links ul li {
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 1.5px; }
+  footer #copyright {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-top: 200px;
+    position: absolute;
+    left: 10%;
+    width: 50%;
+    height: 50px; }
+  footer #email {
+    position: absolute;
+    left: 65%;
+    width: 30%;
+    margin-top: 150px; }
+    footer #email p {
+      color: #228896;
+      font-family: "Roboto", sans-serif; }
+    footer #email input {
+      border-radius: 10px;
+      height: 30px;
+      width: 225px; }
+    footer #email button {
+      background: #228896;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      height: 30px;
+      margin-left: 10px;
+      border-radius: 10px;
+      border: 0px solid gray;
+      box-shadow: inset 1px 1px 10px #333; }
+
+/*# sourceMappingURL=main.css.map */

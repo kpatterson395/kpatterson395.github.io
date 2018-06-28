@@ -1,0 +1,303 @@
+$main-font: 'Roboto', sans-serif;
+
+
+%header-txt {
+			margin-left: 10%;
+			font-family: $main-font;
+			color: white;
+			font-size: 30px;
+			text-transform: uppercase;
+}
+
+
+*{
+
+	box-sizing: border-box;
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body { 
+	background: #c1d5d5 url(https://www.batdorfcoffee.com/skin/frontend/default/batdorfc/images/map-bg2.png)  center top no-repeat;   
+	color:#432f02;  
+}
+
+
+header {
+	background: rgb(164, 169, 178);
+	width: 100%;
+	margin-top: 10px;
+	height: 80px;
+	font-family: $main-font;
+	font-size: 16px;
+	position: relative;
+	div {
+		position: absolute;
+		right: 5%;
+		top: 40%;
+		letter-spacing: 2px;
+		span {
+			transition: color 0.5s ease-out;
+			&:hover {
+				color: #56d8d6;
+				cursor: pointer;
+			}
+		}
+		.fa-shopping-cart {
+			color: #56d8d6;
+			font-size: 20px;
+		}
+	}
+}
+
+
+
+#tabs {
+	positon: relative;
+	width: 80%;
+	margin-left: 10%;
+		#tab-menu {
+			margin: 0;
+			.menu {
+				list-style-type: none;
+				display: inline-block;
+				padding: 10px 30px;
+				margin: 0 5px;
+				width: auto;
+				background: #3d2c20;
+				color: #56d8d6;
+				font-family: 'Crete Round', serif;
+				text-transform: uppercase;
+				font-size: 15px;
+				border-radius: 10px 10px 0 0; 
+				&:hover {
+					background: #efcb94;
+					color: #3d2c20;
+				}
+			}
+		}
+	.dropdown {
+		z-index: 999;
+		visibility: "hidden";
+		opacity: 0;
+		position: absolute;
+		background: #efcb94;
+		color: #3d2c20;
+		margin-top: 10px;
+		margin-left: -30px;
+		width: 300px;
+		ul {
+			margin: 0;
+			list-style-type: none;
+			li {
+				display: block;
+			}
+		}
+	
+	}
+		@media screen and (max-width: 1238px){
+			#tab-menu {
+				.menu {
+					font-size: 10px;
+				}	
+			}
+		}
+		@media screen and (max-width: 768px){
+			#tab-menu {
+				.menu {
+					font-size: 10px;
+					padding: 10px 10px;
+
+				}	
+			}
+		}	
+}
+
+#intro {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	margin-bottom: 0;
+	img {
+		position: absolute;
+		left: 10%;
+		top: 10%;
+		height: auto;
+		width: 35%;
+	}
+	#search {
+		position: absolute;
+		padding: 15px 25px;
+		margin-left: 5px;
+		top: 10%;
+		right: 10%;
+		background: rgba(164, 169, 178, 0.8);
+		font-family: $main-font;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		height: 40%;
+		width: 35%;
+		input {
+			margin-top: 10px;
+			display: block;
+			width: 80%;
+			height: 30px;
+			border: 0px solid gray;
+			border-radius: 5px;
+			font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+		    font-style: normal;
+		    font-weight: normal;
+		    text-decoration: inherit;
+			padding-left: 5px;
+		}
+	}
+
+}
+
+
+#main-info {
+	width: 80%;
+	margin-left: 10%;
+	height: 1900px;
+	background: rgba(164, 169, 178, 0.6);
+	position: relative;
+	img {
+		margin-top: 50px;
+		position: relative;
+		width: 80%;
+		height: auto;
+		margin-left: 10%;
+	}
+	#tagLine {
+		margin-top: 50px;
+		position: relative;
+		width: 50%;
+		height: auto;
+		margin-left: 25%;
+	}
+	.customer-fav {
+		position: relative;
+		margin-top: 50px;
+		p {
+			@extend %header-txt;
+		}
+		#fav-img {
+			position: relative;
+			width: 80%;
+			margin-left: 10%;
+				.divider {
+					width: 1px;
+					height: 300px;
+					background: yellow;
+					display: inline-block;
+					margin: 0 24px 12.5px 24px;
+				}
+				img {
+					positon: absolute;
+					height: 325px;
+					width: auto;
+					margin: auto;
+				}
+
+		}
+
+	}
+
+	#find {
+			position: relative;
+		p {
+			@extend %header-txt;
+		}
+		img {
+			width: 80%;
+			margin-top: 0;
+		}
+	}
+
+	#collections {
+		p {
+				@extend %header-txt;
+		}
+	}
+}
+
+
+footer{
+	position: relative;
+	background: rgb(164, 169, 178);
+	width: 100%;
+	height: 350px;
+	#info-links {
+		position: absolute;
+		width: 80%;
+		left: 10%;
+		ul {
+			list-style-type: none;
+			display: inline-block;
+			vertical-align: top;
+			padding-right: 75px;
+
+			h3 {
+				font-family: 'Crete Round', serif;
+				text-decoration: none;
+				font-size: 15px;
+			}
+
+			li {
+				font-family: $main-font;
+				font-size: 12px;
+				line-height: 25px;
+				letter-spacing: 1.5px;
+			}
+		}
+	}
+
+	#copyright {		
+		position: absolute;
+		font-family: $main-font;
+		font-size: 18px;
+		color: white;
+		margin-top: 200px;
+		position: absolute;
+		left: 10%;
+		width: 50%;
+		height: 50px;
+
+	}
+
+	#email {
+		position: absolute;
+		left: 65%;
+		width: 30%;
+		margin-top: 150px;
+
+		p {
+			color: #228896;
+			font-family: $main-font;
+		}
+
+		input {
+			border-radius: 10px;
+			height: 30px;
+			width: 225px;
+		}
+		button {
+			background: #228896;
+			font-size: 16px;
+			font-family: $main-font;
+			color: white;
+			height: 30px;
+			margin-left: 10px;
+			border-radius: 10px;
+			border: 0px solid gray;
+			box-shadow: inset 1px 1px 10px #333;
+		}
+	}
+}
+
