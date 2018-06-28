@@ -20,7 +20,6 @@ body {
 header {
   background: #a4a9b2;
   width: 100%;
-  margin-top: 10px;
   height: 80px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -81,7 +80,31 @@ header {
   @media screen and (max-width: 768px) {
     #tabs #tab-menu .menu {
       font-size: 10px;
-      padding: 10px 10px; } }
+      padding: 10px 10px; }
+    #tabs .dropdown {
+      width: 200px;
+      margin-top: 10px;
+      margin-left: -9px; }
+      #tabs .dropdown ul {
+        padding: 0 5px; }
+    #tabs .story {
+      margin-left: -100px; } }
+  @media screen and (max-width: 375px) {
+    #tabs {
+      margin-left: 0;
+      width: 100%; }
+      #tabs #tab-menu .menu {
+        font-size: 6px;
+        padding: 5px 5px;
+        margin: 0 -1px; }
+      #tabs .dropdown {
+        width: 90px;
+        margin-top: 5px;
+        margin-left: -5px; }
+        #tabs .dropdown ul {
+          padding: 0 5px; }
+      #tabs .story {
+        margin-left: -45px; } }
 
 #intro {
   position: relative;
@@ -105,7 +128,7 @@ header {
     color: white;
     font-size: 20px;
     text-transform: uppercase;
-    height: 40%;
+    height: 45%;
     width: 35%; }
     #intro #search input {
       margin-top: 10px;
@@ -119,6 +142,12 @@ header {
       font-weight: normal;
       text-decoration: inherit;
       padding-left: 5px; }
+  @media screen and (max-width: 768px) {
+    #intro #search {
+      font-size: 15px; } }
+  @media screen and (max-width: 375px) {
+    #intro #search {
+      font-size: 12px; } }
 
 #main-info {
   width: 80%;
@@ -161,6 +190,39 @@ header {
     #main-info #find img {
       width: 80%;
       margin-top: 0; }
+  @media screen and (max-width: 375px) {
+    #main-info {
+      height: 1400px; }
+      #main-info .customer-fav {
+        margin-top: 20px; }
+        #main-info .customer-fav p {
+          font-size: 12px; }
+        #main-info .customer-fav #fav-img .divider {
+          display: none; }
+        #main-info .customer-fav #fav-img img {
+          width: 100%;
+          height: auto;
+          margin: 0 0; }
+      #main-info #find p {
+        font-size: 12px; }
+      #main-info #collections p {
+        font-size: 12px; } }
+  @media screen and (max-width: 768px) {
+    #main-info {
+      height: 1000px; }
+      #main-info .customer-fav {
+        margin-top: 20px; }
+        #main-info .customer-fav p {
+          font-size: 12px; }
+        #main-info .customer-fav #fav-img .divider {
+          display: none; }
+        #main-info .customer-fav #fav-img img {
+          width: auto;
+          height: 193px; }
+      #main-info #find p {
+        font-size: 12px; }
+      #main-info #collections p {
+        font-size: 12px; } }
 
 footer {
   position: relative;
@@ -191,7 +253,6 @@ footer {
     font-size: 18px;
     color: white;
     margin-top: 200px;
-    position: absolute;
     left: 10%;
     width: 50%;
     height: 50px; }
@@ -217,5 +278,66 @@ footer {
       border-radius: 10px;
       border: 0px solid gray;
       box-shadow: inset 1px 1px 10px #333; }
+  @media screen and (max-width: 768px) {
+    footer {
+      height: 500px; }
+      footer #copyright {
+        margin-top: 350px; }
+      footer #email {
+        margin-top: 340px; }
+        footer #email button {
+          margin-top: 10px; } }
+  @media screen and (max-width: 375px) {
+    footer {
+      width: 100%; }
+      footer #info-links {
+        width: 80%; }
+        footer #info-links ul {
+          list-style-type: none;
+          display: inline-block;
+          vertical-align: top;
+          padding-right: 10px;
+          margin: 0 0; }
+          footer #info-links ul h3 {
+            font-family: 'Crete Round', serif;
+            text-decoration: none;
+            font-size: 12px; }
+          footer #info-links ul li {
+            font-family: "Roboto", sans-serif;
+            font-size: 8px;
+            line-height: 10px;
+            letter-spacing: 1px; }
+      footer #copyright {
+        font-size: 10px;
+        color: white;
+        margin-top: 230px;
+        left: 10%;
+        width: 80%;
+        height: 50px; }
+      footer #email {
+        width: 100%;
+        left: 10%;
+        margin-top: 250px;
+        position: absolute; }
+        footer #email p {
+          color: #228896;
+          font-family: "Roboto", sans-serif;
+          font-size: 8px; }
+        footer #email input {
+          border-radius: 10px;
+          height: 20px;
+          width: 150px;
+          font-size: 8px;
+          padding-left: 2px; }
+        footer #email button {
+          background: #228896;
+          font-size: 8px;
+          font-family: "Roboto", sans-serif;
+          color: white;
+          height: 10px;
+          margin-left: 10px;
+          border-radius: 10px;
+          border: 0px solid gray;
+          box-shadow: inset 1px 1px 10px #333; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -31,7 +31,6 @@ body {
 header {
 	background: rgb(164, 169, 178);
 	width: 100%;
-	margin-top: 10px;
 	height: 80px;
 	font-family: $main-font;
 	font-size: 16px;
@@ -115,6 +114,41 @@ header {
 
 				}	
 			}
+			.dropdown {
+				width: 200px;
+				margin-top: 10px;
+				margin-left: -9px;
+				ul {
+					padding: 0 5px;
+	
+				}
+			}
+			.story{
+				margin-left: -100px;
+			}
+		}	
+		@media screen and (max-width: 375px){
+			margin-left: 0;
+			width: 100%;
+			#tab-menu {
+				.menu {
+					font-size: 6px;
+					padding: 5px 5px;
+					margin: 0 -1px;	
+				}	
+			}
+			.dropdown {
+				width: 90px;
+				margin-top: 5px;
+				margin-left: -5px;;
+				ul {
+					padding: 0 5px;
+	
+				}
+			}
+			.story{
+				margin-left: -45px;
+			}
 		}	
 }
 
@@ -141,7 +175,7 @@ header {
 		color: white;
 		font-size: 20px;
 		text-transform: uppercase;
-		height: 40%;
+		height: 45%;
 		width: 35%;
 		input {
 			margin-top: 10px;
@@ -157,7 +191,19 @@ header {
 			padding-left: 5px;
 		}
 	}
+	@media screen and (max-width: 768px){
+		#search {
+			font-size: 15px;
+		}
+		
+	}
 
+	@media screen and (max-width: 375px){
+		#search {
+			font-size: 12px;
+	}
+		
+	}
 }
 
 
@@ -225,6 +271,63 @@ header {
 				@extend %header-txt;
 		}
 	}
+@media screen and (max-width: 375px){
+		height: 1400px;
+		.customer-fav {
+			p {
+				font-size: 12px;
+			}
+			margin-top: 20px;
+			#fav-img {
+				.divider {
+					display: none;
+				}
+				img {
+					width: 100%;
+					height: auto;
+					margin: 0 0;
+				}
+			}
+		}
+		#find {
+			p {
+				font-size: 12px;
+			}
+		}
+		#collections {
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+	@media screen and (max-width: 768px){
+		height: 1000px;
+		.customer-fav {
+			p {
+				font-size: 12px;
+			}
+			margin-top: 20px;
+			#fav-img {
+				.divider {
+					display: none;
+				}
+				img {
+					width: auto;
+					height: 193px;
+				}
+			}
+		}
+		#find {
+			p {
+				font-size: 12px;
+			}
+		}
+		#collections {
+			p {
+				font-size: 12px;
+			}
+		}
+	}
 }
 
 
@@ -264,7 +367,6 @@ footer{
 		font-size: 18px;
 		color: white;
 		margin-top: 200px;
-		position: absolute;
 		left: 10%;
 		width: 50%;
 		height: 50px;
@@ -297,6 +399,84 @@ footer{
 			border-radius: 10px;
 			border: 0px solid gray;
 			box-shadow: inset 1px 1px 10px #333;
+		}
+	}
+	@media screen and (max-width: 768px){
+		height: 500px;
+		#copyright {
+			margin-top: 350px;
+		}
+		#email {
+			margin-top: 340px;
+			button {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 375px){
+		width: 100%;
+		#info-links {
+			width: 80%;
+			ul {
+				list-style-type: none;
+				display: inline-block;
+				vertical-align: top;
+				padding-right: 10px;
+				margin: 0 0;
+				h3 {
+					font-family: 'Crete Round', serif;
+					text-decoration: none;
+					font-size: 12px;
+				}
+
+				li {
+					font-family: $main-font;
+					font-size: 8px;
+					line-height: 10px;
+					letter-spacing: 1px;
+				}
+			}
+		}
+		#copyright {		
+			font-size: 10px;
+			color: white;
+			margin-top: 230px;
+			left: 10%;
+			width: 80%;
+			height: 50px;
+
+		}
+		#email {
+			width: 100%;
+			left: 10%;
+			margin-top: 250px;
+			position: absolute;
+
+			p {
+				color: #228896;
+				font-family: $main-font;
+				font-size: 8px;
+			}
+
+			input {
+				border-radius: 10px;
+				height: 20px;
+				width: 150px;
+				font-size: 8px;
+				padding-left: 2px;
+			}
+			button {
+				background: #228896;
+				font-size: 8px;
+				font-family: $main-font;
+				color: white;
+				height: 10px;
+				margin-left: 10px;
+				border-radius: 10px;
+				border: 0px solid gray;
+				box-shadow: inset 1px 1px 10px #333;
+			}
 		}
 	}
 }
