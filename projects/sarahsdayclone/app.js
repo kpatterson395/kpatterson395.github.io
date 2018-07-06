@@ -26,17 +26,17 @@ $(document).ready(function() {
 
 
 
-$( window ).scroll(function() {
-     if ($(this).scrollTop() > 10) {
-         $("header").css("background", "rgba(255, 255, 255, 0.5)");
-         $("#header-logo h1").css("font-size", "15px");
+  $("body").scroll(function() {
+       if ($("body").scrollTop() > 10) {
+           $("header").css("background", "rgba(255, 255, 255, 0.5)");
+           $("#header-logo h1").css("font-size", "15px");
 
-     }else{
-         $("header").css("background", "rgba(255, 255, 255, 1)");
-         $("#header-logo h1").css("font-size", "30px");
+       }else{
+           $("header").css("background", "rgba(255, 255, 255, 1)");
+           $("#header-logo h1").css("font-size", "30px");
 
-     }
-});
+       }
+  });
 
 
 

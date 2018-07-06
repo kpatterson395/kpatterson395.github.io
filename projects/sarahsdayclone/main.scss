@@ -130,6 +130,14 @@ header {
 			left: 90%;
 		}
 	}
+	@media screen and (max-width: 1099px){
+		ul {
+			li {
+				font-size: 8px;
+				padding: 0;
+			}
+		}
+	}
 }
 
 

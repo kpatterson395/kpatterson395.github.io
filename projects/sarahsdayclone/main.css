@@ -85,6 +85,10 @@ header {
       font-size: 20px;
       top: 10%;
       left: 90%; } }
+  @media screen and (max-width: 1099px) {
+    header ul li {
+      font-size: 8px;
+      padding: 0; } }
 
 .slideshow {
   width: 100%;
