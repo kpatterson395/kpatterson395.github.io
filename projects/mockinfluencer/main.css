@@ -194,8 +194,7 @@ header {
     #action {
       height: 300px; }
       #action img {
-        height: 200px;
-        width: auto; }
+        display: none; }
       #action .action-txt h3 {
         font-size: 15px; }
       #action .action-txt p {

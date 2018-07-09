@@ -271,8 +271,7 @@ header {
 	@media screen and (max-width: 375px){
 		height: 300px;
 		img {
-			height: 200px;
-			width: auto
+			display: none;
 		}
 		.action-txt {
 	
