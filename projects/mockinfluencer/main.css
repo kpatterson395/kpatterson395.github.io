@@ -67,15 +67,18 @@ header {
         padding-left: 20px; } }
   @media screen and (max-width: 600px) {
     header {
-      height: 150px; } }
+      height: 150px; }
+      header #ctrlNav {
+        position: absolute;
+        top: 5px;
+        right: 5px; }
+        header #ctrlNav .fas {
+          font-size: 25px;
+          margin: 0; } }
+  @media screen and (max-width: 450px) {
+    header {
+      height: 175px; } }
   @media screen and (max-width: 375px) {
-    header #ctrlNav {
-      position: absolute;
-      top: 5px;
-      right: 5px; }
-      header #ctrlNav .fas {
-        font-size: 25px;
-        margin: 0; }
     header #head-content h1 {
       font-size: 25px;
       padding-left: 10px;
@@ -183,19 +186,20 @@ header {
       font-size: 20px; }
     #action .action-txt p {
       font-size: 15px; } }
+  @media screen and (max-width: 750px) {
+    #action .action-txt {
+      width: 60%;
+      top: 30%; } }
   @media screen and (max-width: 375px) {
     #action {
       height: 300px; }
       #action img {
         height: 200px;
         width: auto; }
-      #action .action-txt {
-        top: 30%;
-        width: 60%; }
-        #action .action-txt h3 {
-          font-size: 15px; }
-        #action .action-txt p {
-          font-size: 10px; } }
+      #action .action-txt h3 {
+        font-size: 15px; }
+      #action .action-txt p {
+        font-size: 10px; } }
 
 .info {
   position: relative;

@@ -101,8 +101,6 @@ header {
 	}
 	@media screen and (max-width: 600px){
 		height: 150px;
-	}
-	@media screen and (max-width: 375px){
 		#ctrlNav {
 			position: absolute;
 			top: 5px;
@@ -112,6 +110,12 @@ header {
 				margin: 0;
 			}
 		}
+	}
+	@media screen and (max-width: 450px){
+		height: 175px
+	}
+	@media screen and (max-width: 375px){
+
 		#head-content {
 			h1 {
 				font-size: 25px;
@@ -258,6 +262,12 @@ header {
 			}
 		}
 	}
+	@media screen and (max-width: 750px){
+		.action-txt {
+			width: 60%;
+			top: 30%;
+		}
+	}
 	@media screen and (max-width: 375px){
 		height: 300px;
 		img {
@@ -265,8 +275,7 @@ header {
 			width: auto
 		}
 		.action-txt {
-			top: 30%;
-			width: 60%;
+	
 			h3 {
 				font-size: 15px;
 			}
