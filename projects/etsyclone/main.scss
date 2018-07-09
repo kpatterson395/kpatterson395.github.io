@@ -1,0 +1,156 @@
+$accent-orange: #f45800;
+$accent-blue: #202579;
+$header-font: 'Merriweather', serif;
+$link-font: 'Roboto', sans-serif;
+
+*{
+
+	box-sizing: border-box;
+}
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+}
+
+
+header {
+	.input-group-addon {
+		background: $accent-orange;
+		color: white;
+		font-weight: 600;
+		border: none;
+	}
+	
+	padding: 20px 0;
+	h1 {
+		margin: 0 10px;
+		padding: 0;
+		color: $accent-orange;
+		font-family: $header-font;
+	}
+
+	.header-links {
+		list-style-type: none;
+		li {
+			display: inline-block;
+			line-height: 25px;
+
+		}
+		.header-link-og {
+			color: $accent-orange;
+			padding: 0 5px;
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		}
+		#link-divider {
+			font-size: 40px;
+			font-weight: 100;
+			opacity: 0.5;
+		}
+		#cart-link {
+			line-height: 15px;
+			color: gray;
+			&:hover {
+				color: black;
+				cursor: pointer;
+			}
+		}
+		button {
+			border-radius: 5px;
+			border: 1px solid $accent-orange;
+			background: white;
+			color: $accent-orange;
+			&:hover {
+				background: rgba(244, 88, 0, 0.1);
+
+			}
+		}
+	}
+}
+
+
+#menu {
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	text-align: center;
+	ul {
+		list-style-type: none;
+		li {
+			padding: 12px 20px;
+			display: inline-block;
+			color: #222;
+			font-family: $link-font;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+
+#slide-container {
+	margin-top: 50px;
+	position: relative;
+	height: 300px;
+	width: 80%;
+	margin-left: 10%;
+	.slideshow {
+		position: absolute;
+		width: 66%;
+		img {
+			width: 80%;
+			height: 300px;
+		}
+	}
+	#side-panel {
+		width: 33%;
+		#slide-container-section1 {
+			border-radius: 5px;
+			right: 0;
+			top: 0;
+			width: 33%;
+			height: 200px;
+			position: absolute;
+			background: url("https://images.unsplash.com/photo-1512418490979-92798cec1380?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cb2baaa0a6f84dcc3d17a1991c905e7&auto=format&fit=crop&w=800&q=60");
+			background-size: cover;
+			color: black;
+			span {
+				display: inline-block;
+				margin-top: 20%;
+				margin-left: 30%;
+			}
+
+		}
+		#slide-container-section2 {
+			border-radius: 5px;
+			margin-top: 15px;
+			right: 0;
+			bottom: 0;
+			width: 33%;
+			height: 85px;
+			position: absolute;
+			background: $accent-blue;
+			font-family: $link-font;
+			color: white;
+			&:hover {
+				cursor: pointer;
+			}
+			p {
+				margin: 10px 10px;
+			}
+		}
+	}
+
+}
+
