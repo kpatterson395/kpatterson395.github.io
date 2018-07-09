@@ -295,12 +295,11 @@ footer {
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
     font-size: 15px; }
-    @media screen and (min-width: 376px) {
-      footer button:hover {
-        background: black;
-        color: white;
-        border: 1px solid white;
-        cursor: pointer; } }
+    footer button:hover {
+      background: black;
+      color: white;
+      border: 1px solid white;
+      cursor: pointer; }
   @media screen and (max-width: 375px) {
     footer {
       height: 400px; }
