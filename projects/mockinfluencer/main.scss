@@ -411,11 +411,13 @@ footer {
 		border-radius: 5px;
 		font-family: $sec-font;
 		font-size: 15px;
-		&:hover{
-			background: black;
-			color: white;
-			border: 1px solid white;
-			cursor: pointer;
+		@media screen and (min-width: 376px){ 
+			&:hover{
+				background: black;
+				color: white;
+				border: 1px solid white;
+				cursor: pointer;
+			}
 		}
 	}
 	@media screen and (max-width: 375px){ 
