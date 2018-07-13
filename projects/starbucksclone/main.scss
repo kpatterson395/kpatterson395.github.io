@@ -71,7 +71,7 @@ html, body {
 .navBar {
 	height: 100px;
 	position: relative;
-	.fa-bars {
+	.fas {
 		display: none;
 	}
 	img {
@@ -232,6 +232,7 @@ html, body {
 
 		}
 		}
+
 		.ctrlNav {
 			position: absolute;
 			left: 85%;
@@ -252,6 +253,8 @@ html, body {
 			top: 60%;
 
 		}
+		
+
 		.menu-dropdown {
 			width: 100%;
 			height: 600px;
@@ -347,7 +350,7 @@ html, body {
 .chalkboard {
 	background: url("https://images.unsplash.com/photo-1461994319301-06e2de6207c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0b08578544258864b3e0c6bfa856995&auto=format&fit=crop&w=2850&q=80");
 	width: 100%;
-	height: 225px;
+	height: 245px;
 	background: cover;	
 	position: relative;
 	img {
@@ -399,6 +402,15 @@ html, body {
 		}
 	}
 	@media screen and (max-width: 768px){
+		height: 275px;
+		.chalkboard-info {
+			h3 {
+				font-size: 25px;
+			}
+			button {
+				margin-top: 10px;
+			}
+		}
 		img {
 			height: 30%;
 		 	top: 40%;	
@@ -561,13 +573,7 @@ html, body {
 		}
 	}
 	@media screen and (max-width: 375px){
-		.social-media {
-			width: 20%;
-			a {
-				font-size: 15px;
-				display: inline-block;
-			}		
-		}
+
 		.email-join {
 			width: 50%;
 			left: 50%;
@@ -582,8 +588,10 @@ html, body {
 	@media screen and (max-width: 768px){
 		height: 250px;
 		.social-media {
+			width: 20%;
 			a {
 				font-size: 15px;
+				display: inline-block;
 			}		
 		}
 
