@@ -146,6 +146,7 @@ html, body {
     height: 400px;
     padding-right: 5%;
     padding-top: 1%;
+    padding-left: 15%;
     position: absolute;
     margin-top: 40px;
     color: white;
@@ -297,10 +298,12 @@ footer {
       display: inline-block; }
       footer #contact-footer-links ul li {
         display: inline-block;
-        padding: 8px 20px; }
+        padding: 8px 8px; }
     footer #contact-footer-links p {
       display: inline-block;
-      margin-left: 15%; }
+      position: absolute;
+      right: 2%;
+      bottom: 10%; }
       footer #contact-footer-links p #copyright {
         color: white;
         font-size: 11px; }
@@ -321,13 +324,14 @@ footer {
       content: '';
       top: 0;
       left: 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     footer #contact-footer-links {
       font-size: 10px; }
       footer #contact-footer-links ul li {
         padding: 8px 5px; }
       footer #contact-footer-links p {
-        margin-left: 0; }
+        margin-left: 0;
+        bottom: 0; }
         footer #contact-footer-links p #copyright {
           font-size: 8px; }
         footer #contact-footer-links p #copyright-link {

@@ -192,6 +192,7 @@ html, body {
 		height: 400px;
 		padding-right: 5%;
 		padding-top: 1%;
+		padding-left: 15%;
 		position: absolute;
 		margin-top: 40px;
 		color: white;
@@ -389,12 +390,14 @@ footer {
 			display: inline-block;
 			li {
 				display: inline-block;
-				padding: 8px 20px;
+				padding: 8px 8px;
 			}
 		}
 		p {
 			display: inline-block;
-			margin-left: 15%;
+			position: absolute;
+			right: 2%;
+			bottom: 10%;;
 			
 			#copyright {
 				color: white;
@@ -423,7 +426,7 @@ footer {
 		}
 	}
 
-	@media screen and (max-width: 768px){
+	@media screen and (max-width: 960px){
 		#contact-footer-links {
 			font-size: 10px;
 			ul {
@@ -434,6 +437,7 @@ footer {
 			}
 			p {
 				margin-left: 0;
+				bottom: 0;
 				#copyright {
 					font-size: 8px;
 				}

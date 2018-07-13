@@ -4,6 +4,24 @@ var slides = document.getElementsByClassName("slide");
 var dots = document.getElementsByClassName("dot");
 var hide=true;
 
+
+$(window).on("resize", function(){
+	if($(this).width() > 768){
+		$("#navLinks").css("display", "inline-block");
+		$(".fa").css("display", "none");
+		hide=true;
+	}
+	else if ($(this).width()<768){
+		displayNav();
+		$("#navLinks").css("display", "none");
+		$(".fa-bars").css("display", "block");
+		$(".fa-times").css("display", "none");
+		hide=true;			
+	}
+
+
+});
+
 $(document).ready(function(){
 
 
@@ -35,6 +53,11 @@ $(document).ready(function(){
 
 
 	$(".ctrlNav").on("click", function(){
+		displayNav();
+	});
+});
+
+function displayNav(){
 		if(hide){
 			$(".fa-times").css("display", "block");
 			$(".fa-bars").css("display", "none");
@@ -47,9 +70,7 @@ $(document).ready(function(){
 			$("#navLinks").css("display", "none");
 			hide=true;
 		}
-	});
-});
-
+}
 
 function displayMenu(className) {
 		$(".extend."+className).css("opacity", "1");
