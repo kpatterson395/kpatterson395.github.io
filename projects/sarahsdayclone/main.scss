@@ -72,10 +72,19 @@ header {
 	}
 	.fa-bars {
 		display: none;
+		position: absolute;
+		font-size: 30px;
+		top: 40%;
+		left: 10%;
 	}
 	.fa-times {
 		display: none;
+		position: absolute;
+		font-size: 30px;
+		top: 10%;
+		left: 90%;
 	}
+
 
 	@media screen and (max-width: 768px){
 		div {
@@ -86,9 +95,8 @@ header {
 		}
 
 		#header-list1, #header-list2 {
-			  text-align: left;
-			  display: none;
-	   		  li {
+			text-align: left;
+	   		li {
 			  	font-size: 12px;
 			    padding: 0 5px;
 			    display: block;
@@ -96,19 +104,6 @@ header {
 			}
 		}
 
-		.fa-bars {
-			display: inline-block;
-			position: absolute;
-			font-size: 30px;
-			top: 40%;
-			left: 10%;
-		}
-			.fa-times {
-				position: absolute;
-				font-size: 30px;
-				top: 10%;
-				left: 90%;
-			}
 
 		}
 

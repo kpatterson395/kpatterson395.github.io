@@ -48,31 +48,27 @@ header {
       font-size: 30px;
       transition: font-size 0.5s ease-in; }
   header .fa-bars {
-    display: none; }
+    display: none;
+    position: absolute;
+    font-size: 30px;
+    top: 40%;
+    left: 10%; }
   header .fa-times {
-    display: none; }
+    display: none;
+    position: absolute;
+    font-size: 30px;
+    top: 10%;
+    left: 90%; }
   @media screen and (max-width: 768px) {
     header div h1 {
       margin-left: 13%;
       margin-right: 13%; }
     header #header-list1, header #header-list2 {
-      text-align: left;
-      display: none; }
+      text-align: left; }
       header #header-list1 li, header #header-list2 li {
         font-size: 12px;
         padding: 0 5px;
-        display: block; }
-    header .fa-bars {
-      display: inline-block;
-      position: absolute;
-      font-size: 30px;
-      top: 40%;
-      left: 10%; }
-    header .fa-times {
-      position: absolute;
-      font-size: 30px;
-      top: 10%;
-      left: 90%; } }
+        display: block; } }
   @media screen and (max-width: 375px) {
     header div h1 {
       font-size: 15px;

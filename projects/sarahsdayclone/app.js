@@ -6,7 +6,25 @@ var navDisplay = false;
 
 $(document).ready(function() {
 
+  $(window).on("resize", function(){
+  if($(this).width() > 768){
+    $("#header-list1").css("display", "inline-block");
+    $("#header-list2").css("display", "inline-block");
+    $("#header-logo").css("display", "inline-block");
+    $(".fas").css("display", "none");
+    navDis=false;
+  }
+  else if ($(this).width()<768){
+    $("#header-list1").css("display", "none");
+    $("#header-list2").css("display", "none");
+    $("#header-logo").css("display", "inline-block");
+    $(".fa-bars").css("display", "block");
+    $(".fa-times").css("display", "none");
+    navDis=false;     
+  }
 
+
+});
 
   $(".navIcons").on("click", function(){
   	displayNav();
@@ -45,11 +63,11 @@ $(document).ready(function() {
 function displayNav() {
 	if (!navDisplay){
 		$("#header-list1").css("display", "block");
-	  	$("#header-list2").css("display", "block");
-	  	$("#header-logo").css("display", "none");
-	  	$(".fa-bars").css("display", "none");
-	  	$(".fa-times").css("display", "block");
-	  	navDisplay= true;
+  	$("#header-list2").css("display", "block");
+  	$("#header-logo").css("display", "none");
+  	$(".fa-bars").css("display", "none");
+  	$(".fa-times").css("display", "block");
+	  navDisplay= true;
 	}
 	else {
 		$("#header-list1").css("display", "none");
