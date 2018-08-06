@@ -171,8 +171,10 @@ a{
 #project-list {
 	height: 100%;
 	ul {
-		color: white;
-		list-style-type: none;
+		li {	
+			color: white;
+			list-style-type: none;
+		}
 	}
 }
 		
