@@ -168,13 +168,11 @@ a{
 }
 
 
-#project-list {
+#project-section {
 	height: 100%;
-	ul {
-		li {	
-			color: white;
-			list-style-type: none;
-		}
+	display: block;
+	#project-list {
+		list-style-type: none;
 	}
 }
 		
