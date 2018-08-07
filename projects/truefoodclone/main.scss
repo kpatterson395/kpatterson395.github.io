@@ -262,17 +262,18 @@ html, body {
 #info-section2 {
 	background: #d1ccb8;
 	width: 100%;
-	height: 500px;
+	height: 600px;
 	position: relative;
 	margin-top: 800px;
 	.divider {
 		margin-top: 100px;
 		width: 2px;
 		margin-left: 7%;
-		height: 350px;
+		height: 400px;
 		position: absolute;
 		display: inline-block;
 		background: $accent-color2;
+		text-align: center;
 	}
 	.info-section {
 		postion: absolute;
@@ -306,6 +307,9 @@ html, body {
 		}
 	}
 	@media screen and (max-width: 768px){
+		.divider {
+			height: 350px;
+		}
 		.info-section {
 			span {
 				font-size: 10px;
@@ -316,7 +320,7 @@ html, body {
 			}
 		}
 	}
-	@media screen and (max-width: 375px){
+	@media screen and (max-width: 600px){
 		margin-top: 600px;
 		height: 800px;
 		.info-section {

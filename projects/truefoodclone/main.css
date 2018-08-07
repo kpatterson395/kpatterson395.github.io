@@ -194,17 +194,18 @@ html, body {
 #info-section2 {
   background: #d1ccb8;
   width: 100%;
-  height: 500px;
+  height: 600px;
   position: relative;
   margin-top: 800px; }
   #info-section2 .divider {
     margin-top: 100px;
     width: 2px;
     margin-left: 7%;
-    height: 350px;
+    height: 400px;
     position: absolute;
     display: inline-block;
-    background: #477c31; }
+    background: #477c31;
+    text-align: center; }
   #info-section2 .info-section {
     postion: absolute;
     display: inline-block;
@@ -231,12 +232,14 @@ html, body {
         border: 1px solid #477c31;
         cursor: pointer; }
   @media screen and (max-width: 768px) {
+    #info-section2 .divider {
+      height: 350px; }
     #info-section2 .info-section span {
       font-size: 10px; }
     #info-section2 .info-section .info-section2-btn {
       width: 100px;
       height: 25px; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 600px) {
     #info-section2 {
       margin-top: 600px;
       height: 800px; }
