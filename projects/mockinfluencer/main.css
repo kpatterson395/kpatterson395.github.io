@@ -203,10 +203,11 @@ header {
 .info {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 700px;
   background: url("https://images.unsplash.com/photo-1463704131914-97e5aaa0e339?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3d12adee123a799fa89d53be848b8481&auto=format&fit=crop&w=1950&q=80");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 85%;
   color: white; }
   .info .sections {
     opacity: 0;
@@ -239,7 +240,7 @@ header {
   @media screen and (max-width: 1060px) {
     .info .sections .info-section {
       width: 20%; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 505px) {
     .info .sections {
       padding-top: 25px;
       opacity: 1;
