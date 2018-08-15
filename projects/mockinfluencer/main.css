@@ -175,7 +175,7 @@ header {
       display: inline-block; }
   #action img {
     position: absolute;
-    left: 5%;
+    left: 0;
     height: 500px;
     width: auto; }
   @media screen and (max-width: 1060px) {
