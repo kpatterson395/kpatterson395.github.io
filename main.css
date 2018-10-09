@@ -95,84 +95,162 @@ a {
   margin-left: 10%;
   margin-bottom: 100px;
   width: 80%;
+  height: 100%;
   text-align: center;
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   grid-auto-rows: 200px; }
-  #project-list .project-desc {
-    display: inline-block;
-    padding: 0;
-    height: 100%;
-    position: relative;
-    z-index: 999;
-    width: 100%; }
-    #project-list .project-desc .project-desc-id {
-      position: absolute;
-      background: white;
-      border-radius: 40px;
-      color: rgba(247, 66, 98, 0.57);
-      width: 100%;
+  #project-list .project-link {
+    width: 100%;
+    height: 100%; }
+    #project-list .project-link .project-desc {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
       height: 100%;
-      padding: 10% 0 0 0;
-      margin: 0; }
+      position: relative;
+      z-index: 999;
+      width: 100%; }
+      #project-list .project-link .project-desc .project-desc-id {
+        position: absolute;
+        background: white;
+        border-radius: 10px;
+        color: rgba(247, 66, 98, 0.57);
+        width: 100%;
+        height: 100%;
+        padding: 10% 0 0 0;
+        margin: 0; }
+  @media screen and (max-width: 768px) {
+    #project-list {
+      grid-auto-rows: 150px;
+      grid-gap: 25px; } }
+  @media screen and (max-width: 375px) {
+    #project-list {
+      grid-auto-rows: 100px;
+      grid-template-columns: repeat(2, 1fr); }
+      #project-list .project-link .project-desc .project-desc-id {
+        font-size: 10px; } }
 
 .calc-proj {
   background: url("./img/JScalc.png");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  grid-column: 1 / 2;
+  border-radius: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row: 1; }
+  @media screen and (max-width: 375px) {
+    .calc-proj {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row: 1; } }
 
 .simon-proj {
   background: url("./img/SimonSays.png");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  grid-column: 2 / 3;
+  border-radius: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row: 1; }
+  @media screen and (max-width: 375px) {
+    .simon-proj {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row: 1; } }
 
 .starbs-proj {
   background: url("./img/starbucksclone.png");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  grid-column: 3;
+  border-radius: 10px;
+  grid-column-start: 3;
+  grid-column-end: 3;
   grid-row: 1; }
+  @media screen and (max-width: 375px) {
+    .starbs-proj {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row: 2; } }
 
 .dg-proj {
   background: url("./img/DGclone.png");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  grid-column: 1 / 2;
+  border-radius: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row: 2; }
+  @media screen and (max-width: 375px) {
+    .dg-proj {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row: 2; } }
 
 .fitness-proj {
   background: url("./img/MockFitnessClone.png");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  grid-column: 2 / 3;
+  border-radius: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row: 2; }
+  @media screen and (max-width: 375px) {
+    .fitness-proj {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row: 3; } }
 
 .quiz-proj {
   background: url("./img/QuizCreator.png");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  grid-column: 3;
+  border-radius: 10px;
+  grid-column-start: 3;
+  grid-column-end: 3;
   grid-row: 2; }
+  @media screen and (max-width: 375px) {
+    .quiz-proj {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row: 3; } }
 
 .goats-proj {
   background: url("./img/Goatstagram.png");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  grid-column: 2 / 3;
+  border-radius: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row: 3; }
+  @media screen and (max-width: 375px) {
+    .goats-proj {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row: 4; } }
 
 .hide-class {
   visibility: hidden; }
