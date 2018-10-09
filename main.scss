@@ -11,6 +11,7 @@ $baseline-font-size: 16px;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	border-radius: 10px;
+	box-shadow: $standard-box-shadow;
 	grid-column-start: $column1;
 	grid-column-end: $column2;
   	grid-row: $row;
