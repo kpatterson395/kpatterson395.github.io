@@ -277,15 +277,16 @@ a{
 
 }
 
-.fitness-proj {
-	background: url("./img/MockFitnessClone.png");
+
+
+
+.budget-proj {
+	background: url("./img/iBudget.png");
   	@include grid-cell(2, 3, 2);
   	@media screen and (max-width: 375px){
-  		@include grid-cell(1, 2, 3);
+  		@include grid-cell(1, 2, 3);;
   	}
-
 }
-
 .quiz-proj {
 	background: url("./img/QuizCreator.png");
   	@include grid-cell(3, 3, 2);
@@ -303,6 +304,8 @@ a{
   		@include grid-cell(1, 2, 4);
   	}
 }
+
+
 
 .hide-class {
 	visibility: hidden;
