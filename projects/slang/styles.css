@@ -94,10 +94,12 @@ nav {
     top: 50px;
     right: 0px;
     margin: 50px;
+    border-radius: 5px;
     background-image: url("img/overlay.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 3px 3px 15px rgb(90 96 104 / 25%);
 }
 
 .flex-container {
