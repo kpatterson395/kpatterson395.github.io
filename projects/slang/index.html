@@ -13,36 +13,98 @@
 </head>
 
 <body>
-    <nav>
-        <span id="headers">
-            <span>Slang</span>
-            <span>Product</span>
-            <span>Courses</span>
-            <span>Solutions</span>
-            <span>Pricing</span>
-            <span>Careers</span>
-        </span>
+    <header class="header">
+        <div class="headerContainer">
+            <nav>
+                <span>Slang</span>
+                <span>Product</span>
+                <span>Courses</span>
+                <span id="dropdown">
+                    <span id="solutions">Solutions<img src="img/down.svg" /></span>
+                    <div class="hide">
+                        <span>Businesses</span>
+                        <span>Universities</span>
+                        <span>ESL Schools</span>
+                    </div>
+                </span>
 
-        <span id="navbarButton">
-            <button id="signButton">Sign In</button>
-            <button id="freeButton">Start for free!</button>
-        </span>
+                <span>Pricing</span>
+                <span>Careers</span>
+            </nav>
+            <div>
+                <button id="signButton">Sign In</button>
+                <button id="freeButton">Start for free!</button>
+            </div>
 
-    </nav>
+        </div>
+    </header>
     <div id="container">
         <div id="hero">
             <h1>An all-in-one professional English learning platform.</h1>
             <p>Slang is a modular learning platform that allows organizations to easily create professional English
                 career
                 paths at scale for any role using the largest catalog of specialized English courses in the world.</p>
-            <button>Businesses</button>
-            <button>Universities</button>
+            <button>
+                <svg class="buttonImg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
+                    <path fill="#202327" fill-rule="evenodd"
+                        d="M5 17a1 1 0 011 1v5c0 1.648 1.352 3 3 3h14c1.648 0 3-1.352 3-3v-5a1 1 0 112 0v5c0 2.752-2.248 5-5 5H9c-2.752 0-5-2.248-5-5v-5a1 1 0 011-1z"
+                        clip-rule="evenodd"></path>
+                    <path fill="#202327" fill-rule="evenodd"
+                        d="M8 10c-1.648 0-3 1.352-3 3v2c0 1.648 1.352 3 3 3h5a1 1 0 110 2H8c-2.752 0-5-2.248-5-5v-2c0-2.752 2.248-5 5-5h16c2.752 0 5 2.248 5 5v2c0 2.752-2.248 5-5 5h-5a1 1 0 110-2h5c1.648 0 3-1.352 3-3v-2c0-1.648-1.352-3-3-3H8z"
+                        clip-rule="evenodd"></path>
+                    <path fill="#202327" fill-rule="evenodd"
+                        d="M10 9c0-2.752 2.248-5 5-5h2c2.752 0 5 2.248 5 5a1 1 0 01-1 1H11a1 1 0 01-1-1zm2.173-1h7.654A3.015 3.015 0 0017 6h-2a3.015 3.015 0 00-2.827 2zM12.568 16.568C12.956 16.18 13.473 16 14 16h4c.527 0 1.044.18 1.432.568.388.388.568.905.568 1.432v2c0 .527-.18 1.044-.568 1.432-.388.388-.905.568-1.432.568h-4c-.527 0-1.044-.18-1.432-.568C12.18 21.044 12 20.527 12 20v-2c0-.527.18-1.044.568-1.432zM18 18h-4v2h4v-2z"
+                        clip-rule="evenodd"></path>
+                </svg><span>Businesses</span>
+            </button>
+            <button>
+                <?xml version="1.0" ?><svg class="buttonImg cap" viewBox="0 0 256 256"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <polygon fill="none" points="8 96 128 32 248 96 128 160 8 96" stroke="#000" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16" />
+                    <polyline fill="none" points="188 240 188 128 128 96" stroke="#000" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16" />
+                    <path
+                        d="M220,110.9v54.6a7.8,7.8,0,0,1-1.6,4.7c-6.7,9-35.1,41.8-90.4,41.8s-83.7-32.8-90.4-41.8a7.8,7.8,0,0,1-1.6-4.7V110.9"
+                        fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+                </svg><span>Universities</span>
+            </button>
             <br>
-            <button>ESL Schools</button>
-            <button>Individuals</button>
+            <button>
+                <?xml version="1.0" ?><svg class="buttonImg" id="Icons" style="enable-background:new 0 0 32 32;"
+                    version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke-width: 2;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                    <path class="st0"
+                        d="M19.2,6.9c-1.7,0.7-3.8-0.7-3.8-0.7s0.7-2.4,2.4-3s3.8,0.7,3.8,0.7S20.9,6.2,19.2,6.9z" />
+                    <path class="st0"
+                        d="M22.1,9.1C20.6,8.8,19,9.2,17.8,10c-1.1,0.7-2.5,0.7-3.5,0C13,9.2,11.4,8.8,9.9,9.1c-3.7,0.6-6.3,4.5-5.8,8.7  c0.5,4.2,4.6,11.7,8.3,11.1c0.5-0.1,1-0.3,1.4-0.6c1.3-0.9,3.1-0.9,4.4,0c0.4,0.3,0.9,0.5,1.4,0.6c3.7,0.6,7.8-6.9,8.3-11.1  C28.5,13.6,25.9,9.7,22.1,9.1z" />
+                    <path class="st0" d="M12,3l0.4,0.3C14.7,5,16,7.7,16,10.5v0" />
+                </svg>
+                <span>ESL Schools</span>
+            </button>
+            <button>
+                <?xml version="1.0" ?><svg class="buttonImg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <title />
+                    <g data-name="user people person users man" id="user_people_person_users_man">
+                        <path
+                            d="M23.74,16.18a1,1,0,1,0-1.41,1.42A9,9,0,0,1,25,24c0,1.22-3.51,3-9,3s-9-1.78-9-3a9,9,0,0,1,2.63-6.37,1,1,0,0,0,0-1.41,1,1,0,0,0-1.41,0A10.92,10.92,0,0,0,5,24c0,3.25,5.67,5,11,5s11-1.75,11-5A10.94,10.94,0,0,0,23.74,16.18Z" />
+                        <path d="M16,17a7,7,0,1,0-7-7A7,7,0,0,0,16,17ZM16,5a5,5,0,1,1-5,5A5,5,0,0,1,16,5Z" />
+                    </g>
+                </svg>
+                <span>Individuals</span>
+            </button>
         </div>
-        <div id="img">
-
+        <div id="heroImg">
+            <img src="img/pressPlay.svg" />
         </div>
 
     </div>

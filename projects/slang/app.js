@@ -1,5 +1,9 @@
 const forward = document.querySelector("#toggle-forward")
 const back = document.querySelector("#toggle-back")
+const header = document.querySelector(".header")
+const solutions = document.querySelector("#solutions")
+const hide = document.querySelector(".hide")
+
 
 let firstSlide = 0
 let lastSlide = 2
@@ -46,19 +50,6 @@ forward.addEventListener("click", function () {
     // slidesArr[firstSlide].style.display = "inline-block"
 
 })
-012
-123
-234
-345
-456
-567
-678
-780
-801
-012
-
-
-
 
 back.addEventListener("click", function () {
 
@@ -91,3 +82,18 @@ back.addEventListener("click", function () {
 
 })
 
+document.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+        header.classList.add("headerScroll")
+    } else {
+        header.classList.remove("headerScroll")
+    }
+})
+
+solutions.addEventListener("mouseenter", function () {
+    hide.style.display = "flex"
+})
+
+hide.addEventListener("mouseleave", function () {
+    hide.style.display = "none"
+})
