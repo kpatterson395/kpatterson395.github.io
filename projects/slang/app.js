@@ -97,3 +97,7 @@ solutions.addEventListener("mouseenter", function () {
 hide.addEventListener("mouseleave", function () {
     hide.style.display = "none"
 })
+
+header.addEventListener("mouseleave", function () {
+    hide.style.display = "none"
+})

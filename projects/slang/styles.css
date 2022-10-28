@@ -54,6 +54,7 @@ nav span:hover {
     background-color: white;
     top: 85px;
     border-radius: 5px;
+    box-shadow: 0 0 12px rgb(0 0 0 / 5%);
 
 }
 
