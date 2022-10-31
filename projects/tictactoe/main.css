@@ -1,118 +1,20 @@
-.col-lg-4 {
-    
-    height: 100px;
-    width: 100px;
+.header {
+  margin: 50px 0;
+
 }
 
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 0px;
+}
 
+.board-container {
+  text-align: center;
+}
 
 body {
-  background: black;
-}
-
-
-#top-left {
-  border-right: 2px solid rgba(247, 249, 247, 0.5);
-  border-bottom: 2px solid rgba(247, 249, 247, 0.5);
-}
-#top-middle {
-  border-right: 2px solid rgba(247, 249, 247, 0.5);
-  border-bottom: 2px solid rgba(247, 249, 247, 0.5);
-  border-left: 2px solid rgba(247, 249, 247, 0.5);
-}
-#top-right {
-  border-bottom: 2px solid rgba(247, 249, 247, 0.5);
-  border-left: 2px solid rgba(247, 249, 247, 0.5);
-}
-#middle-left {
-  border-right: 2px solid rgba(247, 249, 247, 0.5);
-  border-bottom: 2px solid rgba(247, 249, 247, 0.5);
-  border-top: 2px solid rgba(247, 249, 247, 0.5);
-}
-#middle-middle {
-  border: 2px solid rgba(247, 249, 247, 0.5);
-}
-#middle-right {
-  border-bottom: 2px solid rgba(247, 249, 247, 0.5);
-  border-left: 2px solid rgba(247, 249, 247, 0.5);
-  border-top: 2px solid rgba(247, 249, 247, 0.5);
-}
-#bottom-right {
-  border-left: 2px solid rgba(247, 249, 247, 0.5);
-  border-top: 2px solid rgba(247, 249, 247, 0.5);
-}
-#bottom-middle {
-  border-left: 2px solid rgba(247, 249, 247, 0.5);
-  border-top: 2px solid rgba(247, 249, 247, 0.5);
-  border-right: 2px solid rgba(247, 249, 247, 0.5);
-}
-#bottom-left {
-  border-right: 2px solid rgba(247, 249, 247, 0.5);
-  border-top: 2px solid rgba(247, 249, 247, 0.5);
-}
-
-h1 { 
   text-align: center;
-  font-family: 'Codystar', cursive;
-  font-size: 80px;
-  color: white;
-  
-
-}
-
-
-.play {
-  font-family: 'Istok Web', sans-serif;
-
-  border-radius: 25px;
-  display: none;
-  text-align: center;
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
-  left: 35%;
-  top: 25%; 
-  width: 30%; 
-  background-color: rgba(255, 255, 255, 0.8);
-}
-.selection { 
-  font-family: 'Questrial', sans-serif;
-  border-radius: 25px;
-  text-align: center;
-  position: fixed; 
-  z-index: 1; 
-  padding: 100px; 
-  width: 30%; 
-  margin-left: 35%;
-  background-color: rgba(255, 255, 255, 0.8);
-  line-height: 10px;
-}
-
-.container-fluid {
-  margin-top: 50px;
-  font-size: 50px;
-  width: 50%;
-  margin-left: 25%;
-  padding: 0 auto;
-  position: relative;  
-}
-
-h3 {
-  color: black;
-}
-.btn {
-  margin: 10px 10px 70px 10px;
-  position: static;
-  border: 1px solid black;
-  font-family: 'Questrial', sans-serif;
-
-}
-
-
-#playAgain {
-  margin: 10px 10px 50px 10px;
-  position: static;
-  border: 1px solid black;
-  font-family: 'Questrial', sans-serif;
-
 }

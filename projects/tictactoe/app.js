@@ -1,173 +1,102 @@
-var playerSel = "";
-var compSel= "";
-var playerTurn=true;
-var squares=9;
-var boardID= ["#top-left", "#middle-left", "#bottom-left", "#top-middle", "#middle-middle", "#bottom-middle", "#top-right", "#middle-right", "#bottom-right"]
-var winningArr=[["#top-left", "#middle-left", "#bottom-left"], 
-                ["#top-middle", "#middle-middle", "#bottom-middle"],
-                ["#top-right", "#middle-right", "#bottom-right"],
-                ["#top-left", "#top-middle", "#top-right"],
-                ["#middle-left", "#middle-middle", "#middle-right"],
-                ["#bottom-left", "#bottom-middle", "#bottom-right"],
-                ["#top-left", "#middle-middle", "#bottom-right"],
-                ["#top-right", "#middle-middle", "#bottom-left"]
-               ];
+let player1 = true
 
+let player1Squares = []
+let player2Squares = []
 
-$(document).ready(function(){
-  
+let winningSquares = [["top-left", "top-middle", "top-right"], ["middle-left", "middle-middle", "middle-right"], ["bottom-left", "bottom-middle", "bottom-right"],
+["top-left", "middle-left", "bottom-left"], ["top-middle", "middle-middle", "bottom-middle"], ["top-right", "middle-right", "bottom-right"],
+["top-left", "middle-middle", "bottom-right"], ["top-right", "middle-middle", "bottom-left"]]
 
-  $(".btn").on("click", function(){
-    $(".selection").css("display", "none");
-    if ($(this).attr('id')==="xSelect") {
-      playerSel = "X";
-      compSel="O";
+// for each arr in winningSquares, check if player arr contains all items
+function checkForWinner(playerArr) {
+  let winning = false
+  if (playerArr.length < 2) {
+    return winning;
+  }
+  else {
+    winningSquares.forEach((i) => {
+
+      let checker = i.every(v => playerArr.includes(v))
+      if (checker) {
+        winning = true
+      }
+    })
+  }
+  return winning
+}
+
+function reset() {
+  $(".box").each(function () {
+    $(this).css({ "background-color": "white" }).removeClass('disabled')
+
+  })
+
+  player1Squares = []
+  player2Squares = []
+}
+
+function gameOver(player) {
+  let totalLength = player1Squares.length + player2Squares.length
+  console.log(totalLength)
+  if (totalLength === 9) {
+    $(".box").each(function () {
+      $(this).css({ "background-color": "black" })
+    })
+
+    $(".player-display").text('Game Over! No Winner')
+    return true
+  }
+  return false
+}
+
+//unbind
+$(document).ready(function () {
+  $(".box").on("click", function () {
+    let id = $(this).attr('id')
+    if ($(this).hasClass('disabled')) {
+      alert('That square has been used, try again')
     }
-    if ($(this).attr('id')==="oSelect") {
-      playerSel = "O";     
-      compSel="X";
-    }
+    else if (player1) {
+      player1Squares.push(id)
 
-  });
+      $(this).css({ "background-color": "blue" }).addClass('disabled')
 
-
-
-
-  $(".box").on("click", function(){
-    
-    // Ensure the click is legitimate.
-    if(isClickLegitimate($(this))){
-        // Update the board state with the new character.
-        updateBoardState($(this)); 
-          // Check if the game is over. 
-      if(isWinner()||isGameOver()){
-        // If it is, end the game.
-        $(".play").css("display", "block");
-        $(".play").html("<button type='button' class='btn btn-lg' id='playAgain'>Play Again?</button>");
-        // restartGame();
+      if (checkForWinner(player1Squares)) {
+        $(".box").each(function () {
+          $(this).css({ "background-color": "blue" })
+        })
+        $(".player-display").text('Player 1 Wins!')
       }
       else {
-        // If it isn't, change turns.
-        computerTurn();
+        if (!gameOver()) {
+          $(".player-display").text('Player 2 turn')
+          player1 = false
+        }
+      }
 
+
+    } else {
+      player2Squares.push(id)
+
+      $(this).css({ "background-color": "pink" }).addClass('disabled')
+
+      if (checkForWinner(player2Squares)) {
+        $(".box").each(function () {
+          $(this).css({ "background-color": "pink" })
+        })
+        $(".player-display").text('Player 2 Wins!')
+      } else {
+        if (!gameOver()) {
+          $(".player-display").text('Player 1 turn')
+          player1 = true
+        }
       }
     }
-    
-    else if (!isClickLegitimate($(this))){
-     alert("That's taken! Try again.");        
-    }
-    
+  })
 
+  $(".reset").on("click", function () {
+    reset()
+    $(".player-display").text('Player 1 turn')
+  })
 
-  });
-  $(".play").on("click", function(){
-    // window.location.reload(true);
-    restartGame();
-  });
-});
-
-
-
-function isClickLegitimate(boxClicked){
-  
-  // Make sure the box is empty & ensure that it's the players turn.
-  var boxClickedId = "#"+boxClicked.attr("id").toString();
-  if ($(boxClickedId).data('contents').length===0&&playerTurn){
-    return true;
-  }
-  
-}
-
-function updateBoardState(boxClicked){
-  //change data contents of selected box
-  
-  $(boxClicked).data('contents', playerSel);
-  //change html of selected box
-  $(boxClicked).html(playerSel);
-  // update board arr
-  updateWinArr("#"+boxClicked.attr("id"), playerSel)
-  //player's turn is over
-  playerTurn=false;
-  squares--;
-
-}
-
-
-function isGameOver(){
-  if (squares===0){
-    return true;
-  }
-  else {
-    return false;
-  }
-}
-
-
-function computerTurn(){
-  idSel = boxSel();
-  if($(idSel).data('contents').length===0){
-    $(idSel).data('contents', compSel);
-    $(idSel).html(compSel);
-    updateWinArr(idSel, compSel);
-    if(isWinner()){
-      alert("GAME OVER");
-      $(".play").css("display", "block");
-      $(".play").html("<button type='button' class='btn btn-lg' id='playAgain'>Play Again?</button>");
-    }
-    squares--;
-    playerTurn=true;
-
-  }
-  else {
-    computerTurn();
-    }
-  }
-  
-  
-
-
-
-  function boxSel(){
-      var ran = Math.floor(Math.random()*9);
-      return boardID[ran];
-  }
-
-function updateWinArr(currentID, currentSel){
-  for (var i=0; i< winningArr.length; i++){
-    for (var j=0; j<winningArr[i].length; j++){
-      winningArr[i][j]=winningArr[i][j].replace(currentID, currentSel);
-      
-    }
-  }
-  console.log(winningArr);
-}
-
-function isWinner(){
-  for (var a = 0; a < winningArr.length; a++){
-    if(winningArr[a][0]===winningArr[a][1] && winningArr[a][1]===winningArr[a][2]){
-      alert("WINNER IS "+winningArr[a][0]+"!!!");
-      return true;
-      
-    }
-    
-  }
-}
-
-function restartGame(){
-
-    window.location.reload(true);
-    var playerSel = "";
-    var compSel= "";
-    var playerTurn=true;
-    var squares=9;
-    var boardID= ["#top-left", "#middle-left", "#bottom-left", "#top-middle", "#middle-middle", "#bottom-middle", "#top-right", "#middle-right", "#bottom-right"]
-    var winningArr=[["#top-left", "#middle-left", "#bottom-left"], 
-                    ["#top-middle", "#middle-middle", "#bottom-middle"],
-                    ["#top-right", "#middle-right", "#bottom-right"],
-                    ["#top-left", "#top-middle", "#top-right"],
-                    ["#middle-left", "#middle-middle", "#middle-right"],
-                    ["#bottom-left", "#bottom-middle", "bottom-right"],
-                    ["#top-left", "#middle-middle", "#bottom-right"],
-                    ["#top-right", "#middle-middle", "#bottom-left"]
-                   ];
-  }
+})
