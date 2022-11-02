@@ -1,0 +1,43 @@
+// variables
+$borderColor: #2d2d2e;
+
+body {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.header {
+    margin: 50px 0;
+}
+
+.board-container {
+    text-align: center;
+
+    .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid $borderColor;
+        display: inline-block;
+        margin: 0px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(183, 195, 199, 0.5);
+        }
+    }
+
+}
+
+.reset {
+    margin-top: 50px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 3px 8px rgb(183 195 199);
+    }
+}
