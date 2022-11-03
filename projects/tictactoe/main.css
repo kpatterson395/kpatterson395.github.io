@@ -48,13 +48,13 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 3px 8px rgb(183, 195, 199);
   border-radius: 5px;
-  transition: 2s ease-in-out;
+  transition: 0.5s ease-in-out;
   animation-fill-mode: both;
 }
 
 .appear {
   opacity: 1;
-  bottom: 50%;
+  bottom: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */

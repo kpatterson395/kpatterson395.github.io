@@ -57,7 +57,7 @@ $(document).ready(function () {
       $(".alert").addClass("appear")
       setTimeout(() => {
         $(".alert").removeClass("appear")
-      }, 3000)
+      }, 2000)
       // alert('That square has been used, try again')
     }
     else if (player1) {
