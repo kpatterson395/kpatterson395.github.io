@@ -23,11 +23,13 @@ body {
 
         &:hover {
             cursor: pointer;
-            background-color: rgba(183, 195, 199, 0.5);
+            box-shadow: 0px 3px 8px rgb(183 195 199);
         }
     }
 
 }
+
+
 
 .reset {
     margin-top: 50px;
@@ -40,4 +42,27 @@ body {
         cursor: pointer;
         box-shadow: 0px 3px 8px rgb(183 195 199);
     }
+}
+
+.alert {
+    width: 30%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 35%;
+    opacity: 0;
+    background-color: white;
+    z-index: 2;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 8px rgb(183 195 199);
+    border-radius: 5px;
+    transition: 2s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.appear {
+    opacity: 1;
+    bottom: 50%;
 }

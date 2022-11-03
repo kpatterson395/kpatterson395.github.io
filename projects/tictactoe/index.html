@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <title>Tic Tac Toe</title>
 
 </head>
@@ -15,7 +17,7 @@
 <body>
 
   <h1 class="header">tic tac toe</h1>
-  <h3 class="player-display">Player 1 turn</h3>
+  <h3 class="player-display">Player 1 - it's your turn!</h3>
   <div class="board-container">
     <div class="box" id="top-left"></div>
     <div class="box" id="top-middle"></div>
@@ -31,6 +33,9 @@
 
   </div>
   <button class="reset">Reset</button>
+  <div class="alert">
+    That square has been used, try again!
+  </div>
   <!-- javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script type="text/javascript" src="app.js"></script>

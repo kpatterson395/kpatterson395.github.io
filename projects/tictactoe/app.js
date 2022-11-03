@@ -40,7 +40,7 @@ function gameOver(player) {
   console.log(totalLength)
   if (totalLength === 9) {
     $(".box").each(function () {
-      $(this).css({ "background-color": "black" })
+      $(this).css({ "background-color": "#414142" })
     })
 
     $(".player-display").text('Game Over! No Winner')
@@ -54,22 +54,26 @@ $(document).ready(function () {
   $(".box").on("click", function () {
     let id = $(this).attr('id')
     if ($(this).hasClass('disabled')) {
-      alert('That square has been used, try again')
+      $(".alert").addClass("appear")
+      setTimeout(() => {
+        $(".alert").removeClass("appear")
+      }, 3000)
+      // alert('That square has been used, try again')
     }
     else if (player1) {
       player1Squares.push(id)
 
-      $(this).css({ "background-color": "blue" }).addClass('disabled')
+      $(this).css({ "background-color": "#7a565b" }).addClass('disabled')
 
       if (checkForWinner(player1Squares)) {
         $(".box").each(function () {
-          $(this).css({ "background-color": "blue" })
+          $(this).css({ "background-color": "#7a565b" })
         })
         $(".player-display").text('Player 1 Wins!')
       }
       else {
         if (!gameOver()) {
-          $(".player-display").text('Player 2 turn')
+          $(".player-display").text("Player 2 - it's your turn!")
           player1 = false
         }
       }
@@ -78,16 +82,16 @@ $(document).ready(function () {
     } else {
       player2Squares.push(id)
 
-      $(this).css({ "background-color": "pink" }).addClass('disabled')
+      $(this).css({ "background-color": "#56677a" }).addClass('disabled')
 
       if (checkForWinner(player2Squares)) {
         $(".box").each(function () {
-          $(this).css({ "background-color": "pink" })
+          $(this).css({ "background-color": "#56677a" })
         })
         $(".player-display").text('Player 2 Wins!')
       } else {
         if (!gameOver()) {
-          $(".player-display").text('Player 1 turn')
+          $(".player-display").text("Player 1 - it's your turn!")
           player1 = true
         }
       }
@@ -96,7 +100,7 @@ $(document).ready(function () {
 
   $(".reset").on("click", function () {
     reset()
-    $(".player-display").text('Player 1 turn')
+    $(".player-display").text("Player 1 - it's your turn!")
   })
 
 })
