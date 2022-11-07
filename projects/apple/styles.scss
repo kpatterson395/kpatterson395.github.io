@@ -7,7 +7,7 @@ $backgroundColor: #fbfbfd;
 @mixin heroText {
     position: absolute;
     text-align: center;
-    color: #1d1d1f;
+
 
     h2 {
         font-size: 56px;
@@ -39,6 +39,36 @@ $backgroundColor: #fbfbfd;
     }
 }
 
+@mixin promoBackground {
+    width: 1262px;
+    height: 580px;
+    background-size: 1262px 580px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+@mixin promoText {
+    top: 50px;
+
+    img {
+        height: 35px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 21px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+
+//styles
 body {
     box-sizing: border-box;
     margin: 0;
@@ -113,6 +143,7 @@ nav {
 
     .hero-text {
         left: 750px;
+        color: #1d1d1f;
         @include heroText;
     }
 }
@@ -136,6 +167,274 @@ nav {
     }
 
     .banner-text {
+        color: #1d1d1f;
         @include heroText;
+    }
+}
+
+.gift-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    .gift-img {
+        width: 3008px;
+        height: 624px;
+        background-size: 3008px 624px;
+        background-image: url("img/appleImg.jpg");
+        background-position: center top;
+    }
+
+    .gift-text {
+        @include heroText;
+        color: white;
+        bottom: 50px;
+        width: 450px;
+
+        a {
+            color: #2997ff;
+        }
+    }
+}
+
+.promos {
+    display: inline-flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .promo-container {
+        display: flex;
+        height: 50%;
+        width: 50%;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+}
+
+.promo1 {
+    @include promoBackground;
+    background-image: url("img/promo_iphone.jpg");
+    margin: 10px 5px 5px 10px;
+}
+
+.promo1-text {
+    @include heroText;
+    @include promoText;
+
+    color: white;
+}
+
+.promo2 {
+    @include promoBackground;
+    background-image: url("img/remote.jpg");
+    margin: 10px 10px 5px 5px;
+}
+
+.promo2-text {
+    @include heroText;
+    @include promoText;
+}
+
+.promo3 {
+    @include promoBackground;
+    background-image: url("img/ipad_promo.jpg");
+    margin: 5px 5px 5px 10px;
+}
+
+.promo3-text {
+    @include heroText;
+    @include promoText;
+
+    color: white;
+
+    img {
+        padding-left: 5px;
+    }
+
+    p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        span {
+            padding-top: 5px;
+        }
+    }
+}
+
+.promo4 {
+    @include promoBackground;
+    background-image: url("img/watch_promo.jpg");
+    margin: 5px 10px 5px 5px;
+}
+
+.promo4-text {
+    @include heroText;
+    @include promoText;
+}
+
+.promo5 {
+    @include promoBackground;
+    background-image: url("img/watch_promo2.jpg");
+    margin: 5px 5px 10px 10px;
+}
+
+.promo5-text {
+    @include heroText;
+    @include promoText;
+    color: white;
+
+    img {
+        height: 50px;
+        padding-bottom: 10px;
+    }
+}
+
+.promo6 {
+    @include promoBackground;
+    background-color: $backgroundColor;
+    margin: 5px 10px 10px 5px;
+}
+
+.promo6-text {
+    @include heroText;
+    top: 150px;
+
+    img {
+        height: 225px;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+@mixin slide {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    min-width: 980px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+//slides
+
+.slideShowContainer {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.slideShow {
+    height: 525px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    position: relative;
+    left: -740px;
+    transition: left 0.5s ease-in-out;
+
+
+    .slide0 {
+        background-image: url("img/slide1.jpg");
+        @include slide;
+        order: 0;
+    }
+
+    .slide1 {
+        background-image: url("img/slide2.jpg");
+        @include slide;
+        order: 1;
+    }
+
+    .slide2 {
+        background-image: url("img/slide3.jpg");
+        @include slide;
+        order: 2;
+    }
+
+    .slide3 {
+        background-image: url("img/slide4.jpg");
+        @include slide;
+        order: 3;
+    }
+
+    .slide4 {
+        background-image: url("img/slide5.jpg");
+        @include slide;
+        order: 4;
+    }
+
+    .slide5 {
+        background-image: url("img/slide6.jpg");
+        @include slide;
+        order: 5;
+    }
+
+    .slide6 {
+        background-image: url("img/slide7.jpg");
+        @include slide;
+        order: 6;
+    }
+
+    .slide7 {
+        background-image: url("img/slide8.jpg");
+        @include slide;
+        order: 7;
+    }
+
+    .slide8 {
+        background-image: url("img/slide9.jpg");
+        @include slide;
+        order: 8;
+    }
+
+    .slide9 {
+        background-image: url("img/slide10.jpg");
+        @include slide;
+        order: 9;
+    }
+
+    .slide10 {
+        background-image: url("img/slide11.jpg");
+        @include slide;
+        order: 10;
+    }
+
+    .slide102 {
+        background-image: url("img/slide11.jpg");
+        @include slide;
+        order: -1;
+    }
+
+    .slide02 {
+        background-image: url("img/slide1.jpg");
+        @include slide;
+        order: 11;
+    }
+
+}
+
+
+.counter {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+
+    svg:hover {
+        cursor: pointer;
+    }
+
+    .counter0 path {
+        fill: black;
     }
 }

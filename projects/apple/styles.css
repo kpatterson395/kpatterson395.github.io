@@ -60,9 +60,9 @@ nav svg path:hover {
 }
 .hero .hero-text {
   left: 750px;
+  color: #1d1d1f;
   position: absolute;
   text-align: center;
-  color: #1d1d1f;
 }
 .hero .hero-text h2 {
   font-size: 56px;
@@ -107,9 +107,9 @@ nav svg path:hover {
   background-position: center top;
 }
 .banner-container .banner-text {
+  color: #1d1d1f;
   position: absolute;
   text-align: center;
-  color: #1d1d1f;
 }
 .banner-container .banner-text h2 {
   font-size: 56px;
@@ -134,6 +134,555 @@ nav svg path:hover {
 .banner-container .banner-text a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.gift-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.gift-container .gift-img {
+  width: 3008px;
+  height: 624px;
+  background-size: 3008px 624px;
+  background-image: url("img/appleImg.jpg");
+  background-position: center top;
+}
+.gift-container .gift-text {
+  position: absolute;
+  text-align: center;
+  color: white;
+  bottom: 50px;
+  width: 450px;
+}
+.gift-container .gift-text h2 {
+  font-size: 56px;
+  margin: 0px;
+  font-weight: 500;
+}
+.gift-container .gift-text p {
+  font-size: 28px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+}
+.gift-container .gift-text a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #06c;
+  font-size: 21px;
+}
+.gift-container .gift-text a svg {
+  height: 20px;
+}
+.gift-container .gift-text a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.gift-container .gift-text a {
+  color: #2997ff;
+}
+
+.promos {
+  display: inline-flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.promos .promo-container {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.promo1 {
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 580px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("img/promo_iphone.jpg");
+  margin: 10px 5px 5px 10px;
+}
+
+.promo1-text {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  color: white;
+}
+.promo1-text h2 {
+  font-size: 56px;
+  margin: 0px;
+  font-weight: 500;
+}
+.promo1-text p {
+  font-size: 28px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+}
+.promo1-text a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #06c;
+  font-size: 21px;
+}
+.promo1-text a svg {
+  height: 20px;
+}
+.promo1-text a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.promo1-text img {
+  height: 35px;
+}
+.promo1-text h2 {
+  font-size: 40px;
+}
+.promo1-text p {
+  font-size: 21px;
+}
+.promo1-text a {
+  font-size: 16px;
+}
+
+.promo2 {
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 580px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("img/remote.jpg");
+  margin: 10px 10px 5px 5px;
+}
+
+.promo2-text {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+}
+.promo2-text h2 {
+  font-size: 56px;
+  margin: 0px;
+  font-weight: 500;
+}
+.promo2-text p {
+  font-size: 28px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+}
+.promo2-text a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #06c;
+  font-size: 21px;
+}
+.promo2-text a svg {
+  height: 20px;
+}
+.promo2-text a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.promo2-text img {
+  height: 35px;
+}
+.promo2-text h2 {
+  font-size: 40px;
+}
+.promo2-text p {
+  font-size: 21px;
+}
+.promo2-text a {
+  font-size: 16px;
+}
+
+.promo3 {
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 580px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("img/ipad_promo.jpg");
+  margin: 5px 5px 5px 10px;
+}
+
+.promo3-text {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  color: white;
+}
+.promo3-text h2 {
+  font-size: 56px;
+  margin: 0px;
+  font-weight: 500;
+}
+.promo3-text p {
+  font-size: 28px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+}
+.promo3-text a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #06c;
+  font-size: 21px;
+}
+.promo3-text a svg {
+  height: 20px;
+}
+.promo3-text a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.promo3-text img {
+  height: 35px;
+}
+.promo3-text h2 {
+  font-size: 40px;
+}
+.promo3-text p {
+  font-size: 21px;
+}
+.promo3-text a {
+  font-size: 16px;
+}
+.promo3-text img {
+  padding-left: 5px;
+}
+.promo3-text p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.promo3-text p span {
+  padding-top: 5px;
+}
+
+.promo4 {
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 580px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("img/watch_promo.jpg");
+  margin: 5px 10px 5px 5px;
+}
+
+.promo4-text {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+}
+.promo4-text h2 {
+  font-size: 56px;
+  margin: 0px;
+  font-weight: 500;
+}
+.promo4-text p {
+  font-size: 28px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+}
+.promo4-text a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #06c;
+  font-size: 21px;
+}
+.promo4-text a svg {
+  height: 20px;
+}
+.promo4-text a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.promo4-text img {
+  height: 35px;
+}
+.promo4-text h2 {
+  font-size: 40px;
+}
+.promo4-text p {
+  font-size: 21px;
+}
+.promo4-text a {
+  font-size: 16px;
+}
+
+.promo5 {
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 580px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("img/watch_promo2.jpg");
+  margin: 5px 5px 10px 10px;
+}
+
+.promo5-text {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  color: white;
+}
+.promo5-text h2 {
+  font-size: 56px;
+  margin: 0px;
+  font-weight: 500;
+}
+.promo5-text p {
+  font-size: 28px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+}
+.promo5-text a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #06c;
+  font-size: 21px;
+}
+.promo5-text a svg {
+  height: 20px;
+}
+.promo5-text a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.promo5-text img {
+  height: 35px;
+}
+.promo5-text h2 {
+  font-size: 40px;
+}
+.promo5-text p {
+  font-size: 21px;
+}
+.promo5-text a {
+  font-size: 16px;
+}
+.promo5-text img {
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+.promo6 {
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 580px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #fbfbfd;
+  margin: 5px 10px 10px 5px;
+}
+
+.promo6-text {
+  position: absolute;
+  text-align: center;
+  top: 150px;
+}
+.promo6-text h2 {
+  font-size: 56px;
+  margin: 0px;
+  font-weight: 500;
+}
+.promo6-text p {
+  font-size: 28px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+}
+.promo6-text a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #06c;
+  font-size: 21px;
+}
+.promo6-text a svg {
+  height: 20px;
+}
+.promo6-text a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.promo6-text img {
+  height: 225px;
+  display: block;
+  margin-bottom: 50px;
+}
+.promo6-text a {
+  font-size: 16px;
+}
+
+.slideShowContainer {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.slideShow {
+  height: 525px;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  position: relative;
+  left: -740px;
+  transition: left 0.5s ease-in-out;
+}
+.slideShow .slide0 {
+  background-image: url("img/slide1.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 0;
+}
+.slideShow .slide1 {
+  background-image: url("img/slide2.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 1;
+}
+.slideShow .slide2 {
+  background-image: url("img/slide3.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 2;
+}
+.slideShow .slide3 {
+  background-image: url("img/slide4.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 3;
+}
+.slideShow .slide4 {
+  background-image: url("img/slide5.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 4;
+}
+.slideShow .slide5 {
+  background-image: url("img/slide6.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 5;
+}
+.slideShow .slide6 {
+  background-image: url("img/slide7.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 6;
+}
+.slideShow .slide7 {
+  background-image: url("img/slide8.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 7;
+}
+.slideShow .slide8 {
+  background-image: url("img/slide9.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 8;
+}
+.slideShow .slide9 {
+  background-image: url("img/slide10.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 9;
+}
+.slideShow .slide10 {
+  background-image: url("img/slide11.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 10;
+}
+.slideShow .slide102 {
+  background-image: url("img/slide11.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: -1;
+}
+.slideShow .slide02 {
+  background-image: url("img/slide1.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 980px;
+  height: 100%;
+  margin-right: 10px;
+  order: 11;
+}
+
+.counter {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+}
+.counter svg:hover {
+  cursor: pointer;
+}
+.counter .counter0 path {
+  fill: black;
 }
 
 /*# sourceMappingURL=styles.css.map */
