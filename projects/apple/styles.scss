@@ -149,17 +149,21 @@ nav {
 
 .hero {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: $backgroundColor;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     .hero-img {
 
         width: 1068px;
         height: 694px;
         background-image: url("img/ipad.jpg");
-        background-size: 1068px 694px
+        background-size: 1068px 694px;
+        background-repeat: no-repeat;
+
     }
 
     .hero-text {
@@ -542,13 +546,24 @@ nav {
         display: flex;
         flex-direction: column;
 
-        p {
+        .columnTitle {
             font-weight: 600;
             color: rgba(50, 50, 45, 1);
+            margin: 0;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
 
         span {
             display: block;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -595,5 +610,49 @@ nav {
         }
 
     }
+
+}
+
+
+
+@media screen and (max-width: 1060px) {
+
+    .hero {
+        .hero-img {
+            width: 100%;
+            height: 900px;
+        }
+
+        .hero-text {
+            left: auto;
+            bottom: 75px;
+        }
+    }
+
+    .footerContainer {
+        height: 100%;
+    }
+
+    .rows {
+        flex-direction: column;
+
+        .columnTitle {
+            margin-bottom: 10px;
+            border-bottom: 1px solid $hrBorder;
+        }
+
+        .columnItems {
+            display: none;
+        }
+
+        .showItem {
+            display: block;
+        }
+    }
+
+    .footer-hr {
+        margin: 0;
+    }
+
 
 }

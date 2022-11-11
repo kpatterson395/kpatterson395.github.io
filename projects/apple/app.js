@@ -88,6 +88,8 @@ $(document).ready(function () {
         })
     })
 
-
+    $(".columnTitle").on("click", function () {
+        $(this).next().toggleClass("showItem")
+    })
 
 })
