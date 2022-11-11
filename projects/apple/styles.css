@@ -8,11 +8,14 @@ body {
 
 .header {
   padding-left: 15%;
-  position: relative;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   color: #cfcccc;
   height: 40px;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
 }
 .header nav {
   position: absolute;
@@ -32,17 +35,18 @@ nav span:hover {
 nav svg {
   height: 15px;
 }
-nav svg path {
-  color: #f5f5f7;
+nav svg:hover path {
+  stroke: white;
 }
-nav svg path:hover {
-  fill: red;
-  stroke: red;
+nav svg:hover rect {
+  stroke: white;
 }
 
-.apple-icon svg path:hover {
-  fill: red;
-  stroke: red;
+.apple-icon path {
+  fill: #f5f5f7;
+}
+.apple-icon path:hover {
+  fill: white;
 }
 
 .hero {
@@ -182,7 +186,7 @@ nav svg path:hover {
   cursor: pointer;
 }
 .gift-container .gift-text a {
-  color: #2997ff;
+  color: #06c;
 }
 
 .promos {
@@ -540,7 +544,7 @@ nav svg path:hover {
   flex-wrap: no-wrap;
   position: relative;
   left: -740px;
-  transition: left 0.5s ease-in-out;
+  transition: left 0.8s cubic-bezier(0.32, 0.06, 0.85, -0.15);
 }
 .slideShow .slide0 {
   background-image: url("img/slide1.jpg");
@@ -552,6 +556,9 @@ nav svg path:hover {
   margin-right: 10px;
   order: 0;
 }
+.slideShow .slide0:hover {
+  cursor: pointer;
+}
 .slideShow .slide1 {
   background-image: url("img/slide2.jpg");
   background-size: cover;
@@ -561,6 +568,9 @@ nav svg path:hover {
   height: 100%;
   margin-right: 10px;
   order: 1;
+}
+.slideShow .slide1:hover {
+  cursor: pointer;
 }
 .slideShow .slide2 {
   background-image: url("img/slide3.jpg");
@@ -572,6 +582,9 @@ nav svg path:hover {
   margin-right: 10px;
   order: 2;
 }
+.slideShow .slide2:hover {
+  cursor: pointer;
+}
 .slideShow .slide3 {
   background-image: url("img/slide4.jpg");
   background-size: cover;
@@ -581,6 +594,9 @@ nav svg path:hover {
   height: 100%;
   margin-right: 10px;
   order: 3;
+}
+.slideShow .slide3:hover {
+  cursor: pointer;
 }
 .slideShow .slide4 {
   background-image: url("img/slide5.jpg");
@@ -592,6 +608,9 @@ nav svg path:hover {
   margin-right: 10px;
   order: 4;
 }
+.slideShow .slide4:hover {
+  cursor: pointer;
+}
 .slideShow .slide5 {
   background-image: url("img/slide6.jpg");
   background-size: cover;
@@ -601,6 +620,9 @@ nav svg path:hover {
   height: 100%;
   margin-right: 10px;
   order: 5;
+}
+.slideShow .slide5:hover {
+  cursor: pointer;
 }
 .slideShow .slide6 {
   background-image: url("img/slide7.jpg");
@@ -612,6 +634,9 @@ nav svg path:hover {
   margin-right: 10px;
   order: 6;
 }
+.slideShow .slide6:hover {
+  cursor: pointer;
+}
 .slideShow .slide7 {
   background-image: url("img/slide8.jpg");
   background-size: cover;
@@ -621,6 +646,9 @@ nav svg path:hover {
   height: 100%;
   margin-right: 10px;
   order: 7;
+}
+.slideShow .slide7:hover {
+  cursor: pointer;
 }
 .slideShow .slide8 {
   background-image: url("img/slide9.jpg");
@@ -632,6 +660,9 @@ nav svg path:hover {
   margin-right: 10px;
   order: 8;
 }
+.slideShow .slide8:hover {
+  cursor: pointer;
+}
 .slideShow .slide9 {
   background-image: url("img/slide10.jpg");
   background-size: cover;
@@ -641,6 +672,9 @@ nav svg path:hover {
   height: 100%;
   margin-right: 10px;
   order: 9;
+}
+.slideShow .slide9:hover {
+  cursor: pointer;
 }
 .slideShow .slide10 {
   background-image: url("img/slide11.jpg");
@@ -652,6 +686,9 @@ nav svg path:hover {
   margin-right: 10px;
   order: 10;
 }
+.slideShow .slide10:hover {
+  cursor: pointer;
+}
 .slideShow .slide102 {
   background-image: url("img/slide11.jpg");
   background-size: cover;
@@ -662,6 +699,9 @@ nav svg path:hover {
   margin-right: 10px;
   order: -1;
 }
+.slideShow .slide102:hover {
+  cursor: pointer;
+}
 .slideShow .slide02 {
   background-image: url("img/slide1.jpg");
   background-size: cover;
@@ -671,6 +711,9 @@ nav svg path:hover {
   height: 100%;
   margin-right: 10px;
   order: 11;
+}
+.slideShow .slide02:hover {
+  cursor: pointer;
 }
 
 .counter {
@@ -683,6 +726,130 @@ nav svg path:hover {
 }
 .counter .counter0 path {
   fill: black;
+}
+
+.slideText {
+  opacity: 0;
+  display: flex;
+  min-width: 600px;
+  flex-wrap: nowrap;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 15px;
+  margin-left: 60px;
+  transition: all 2s ease-in;
+}
+.slideText p {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 350;
+}
+.slideText p span {
+  font-weight: 600;
+}
+.slideText .stream {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 170px;
+  padding: 12px 22px;
+  font-size: 14px;
+  border-radius: 980px;
+  color: rgb(29, 29, 31);
+  background-color: #fff;
+  font-family: "SF Pro";
+  border: none;
+  font-weight: 600;
+}
+.slideText .stream:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.slideText .stream img {
+  height: 20px;
+}
+
+.show {
+  opacity: 1;
+  bottom: 35px;
+}
+
+.hide {
+  opacity: 0.5;
+  transition: opacity 2s ease-in;
+}
+
+.footerContainer {
+  height: 800px;
+  width: 100%;
+  background-color: #f5f5f7;
+  color: rgba(110, 110, 115, 0.8);
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.9;
+  font-weight: 400;
+}
+.footerContainer .footer {
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 10px;
+}
+.footerContainer .footer .footer-hr {
+  margin: 25px auto;
+  border-top: 1px solid rgba(110, 110, 115, 0.4);
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rows .columns {
+  display: flex;
+  flex-direction: column;
+}
+.rows .columns p {
+  font-weight: 600;
+  color: rgb(50, 50, 45);
+}
+.rows .columns span {
+  display: block;
+}
+
+.bottom-footer {
+  margin-top: 30px;
+}
+.bottom-footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom-footer p {
+  margin: 0;
+}
+.bottom-footer hr {
+  border-top: 1px solid rgba(110, 110, 115, 0.4);
+}
+.bottom-footer a {
+  color: #06c;
+}
+.bottom-footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bottom-footer span {
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 1px solid rgba(110, 110, 115, 0.3);
+}
+.bottom-footer span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bottom-footer span:last-of-type {
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

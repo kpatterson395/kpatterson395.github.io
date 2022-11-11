@@ -6,6 +6,15 @@ let counters = [".counter0", ".counter1", ".counter2", ".counter3", ".counter4",
 let focalSlide = 0
 let currentCounter = ".counter0"
 
+function updateSlides() {
+    let position = ((985 * .75) + (985 * (focalSlide))) * -1
+    $(slides[focalSlide]).toggleClass("hide")
+    $(".slideShow").css({ left: `${position}px` })
+    slideText = $(slides[focalSlide]).children()[0]
+    $(slideText).addClass('show');
+}
+
+
 
 $(document).ready(function () {
     counters.forEach((counter) => {
@@ -13,16 +22,80 @@ $(document).ready(function () {
             let path = $(currentCounter).children()[0]
             $(path).css({ fill: "grey" })
 
-
             currentCounter = "." + $(this).attr("class")
             path = $(currentCounter).children()[0]
             $(path).css({ fill: "black" })
-            focalSlide = counters.findIndex(i => i === currentCounter)
-            let position = ((985 * .75) + (985 * (focalSlide))) * -1
 
-            $(".slideShow").css({ left: `${position}px` })
+            let slideText = $(slides[focalSlide]).children()[0]
+            $(slideText).removeClass('show');
+            $(slides[focalSlide]).toggleClass("hide")
+
+
+            focalSlide = counters.findIndex(i => i === currentCounter)
+            updateSlides()
+
+        })
+    })
+
+    $(".slide102").on("click", function () {
+        let path = $(currentCounter).children()[0]
+        $(path).css({ fill: "grey" })
+
+        let slideText = $(slides[focalSlide]).children()[0]
+        $(slideText).removeClass('show');
+        $(slides[focalSlide]).toggleClass("hide")
+
+        focalSlide = 10
+        updateSlides()
+
+        currentCounter = counters[10]
+        path = $(currentCounter).children()[0]
+        $(path).css({ fill: "black" })
+
+
+    })
+
+    $(".slide02").on("click", function () {
+        let path = $(currentCounter).children()[0]
+        $(path).css({ fill: "grey" })
+
+        let slideText = $(slides[focalSlide]).children()[0]
+        $(slideText).removeClass('show');
+        $(slides[focalSlide]).toggleClass("hide")
+
+        focalSlide = 0
+        updateSlides()
+
+        currentCounter = counters[0]
+        path = $(currentCounter).children()[0]
+        $(path).css({ fill: "black" })
+
+
+    })
+
+
+    slides.forEach((slide) => {
+        $(slide).on("click", function () {
+
+            let path = $(currentCounter).children()[0]
+            $(path).css({ fill: "grey" })
+
+
+            let slideText = $(slides[focalSlide]).children()[0]
+            $(slideText).removeClass('show');
+            $(slides[focalSlide]).toggleClass("hide")
+
+            focalSlide = slides.findIndex(i => i === slide)
+            updateSlides()
+
+            currentCounter = counters[focalSlide]
+            path = $(currentCounter).children()[0]
+            $(path).css({ fill: "black" })
 
 
         })
     })
+
+
+
 })
