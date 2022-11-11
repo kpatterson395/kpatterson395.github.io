@@ -549,174 +549,68 @@ nav svg:hover rect {
   left: -740px;
   transition: left 0.8s cubic-bezier(0.32, 0.06, 0.85, -0.15);
 }
-.slideShow .slide0 {
-  background-image: url("img/slide1.jpg");
+.slideShow .slideItem {
   background-size: cover;
   background-position: center;
   overflow: hidden;
   min-width: 980px;
   height: 100%;
   margin-right: 10px;
-  order: 0;
 }
-.slideShow .slide0:hover {
+.slideShow .slideItem:hover {
   cursor: pointer;
+}
+.slideShow .slide0 {
+  background-image: url("img/slide1.jpg");
+  order: 0;
 }
 .slideShow .slide1 {
   background-image: url("img/slide2.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 1;
-}
-.slideShow .slide1:hover {
-  cursor: pointer;
 }
 .slideShow .slide2 {
   background-image: url("img/slide3.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 2;
-}
-.slideShow .slide2:hover {
-  cursor: pointer;
 }
 .slideShow .slide3 {
   background-image: url("img/slide4.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 3;
-}
-.slideShow .slide3:hover {
-  cursor: pointer;
 }
 .slideShow .slide4 {
   background-image: url("img/slide5.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 4;
-}
-.slideShow .slide4:hover {
-  cursor: pointer;
 }
 .slideShow .slide5 {
   background-image: url("img/slide6.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 5;
-}
-.slideShow .slide5:hover {
-  cursor: pointer;
 }
 .slideShow .slide6 {
   background-image: url("img/slide7.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 6;
-}
-.slideShow .slide6:hover {
-  cursor: pointer;
 }
 .slideShow .slide7 {
   background-image: url("img/slide8.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 7;
-}
-.slideShow .slide7:hover {
-  cursor: pointer;
 }
 .slideShow .slide8 {
   background-image: url("img/slide9.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 8;
-}
-.slideShow .slide8:hover {
-  cursor: pointer;
 }
 .slideShow .slide9 {
   background-image: url("img/slide10.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 9;
-}
-.slideShow .slide9:hover {
-  cursor: pointer;
 }
 .slideShow .slide10 {
   background-image: url("img/slide11.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 10;
-}
-.slideShow .slide10:hover {
-  cursor: pointer;
 }
 .slideShow .slide102 {
   background-image: url("img/slide11.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: -1;
-}
-.slideShow .slide102:hover {
-  cursor: pointer;
 }
 .slideShow .slide02 {
   background-image: url("img/slide1.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  min-width: 980px;
-  height: 100%;
-  margin-right: 10px;
   order: 11;
-}
-.slideShow .slide02:hover {
-  cursor: pointer;
 }
 
 .counter {
@@ -891,6 +785,31 @@ nav svg:hover rect {
   }
   .footer-hr {
     margin: 0;
+  }
+}
+@media screen and (max-width: 1236px) {
+  .slideShow {
+    left: -925px;
+  }
+  .slideShow .slideItem {
+    width: 600px;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .slideShow {
+    left: 0px;
+  }
+  .slideShow .slideItem {
+    display: none;
+    min-width: auto;
+  }
+  .slideShow .slide0 {
+    display: block;
+    width: 100%;
+  }
+  .counter {
+    display: none;
   }
 }
 

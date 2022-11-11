@@ -361,82 +361,73 @@ nav {
     left: -740px;
     transition: left 0.8s cubic-bezier(.32, .06, .85, -0.15);
 
+    .slideItem {
+        @include slide;
+
+    }
 
     .slide0 {
         background-image: url("img/slide1.jpg");
-        @include slide;
         order: 0;
     }
 
     .slide1 {
         background-image: url("img/slide2.jpg");
-        @include slide;
         order: 1;
     }
 
     .slide2 {
         background-image: url("img/slide3.jpg");
-        @include slide;
         order: 2;
     }
 
     .slide3 {
         background-image: url("img/slide4.jpg");
-        @include slide;
         order: 3;
     }
 
     .slide4 {
         background-image: url("img/slide5.jpg");
-        @include slide;
         order: 4;
     }
 
     .slide5 {
         background-image: url("img/slide6.jpg");
-        @include slide;
         order: 5;
     }
 
     .slide6 {
         background-image: url("img/slide7.jpg");
-        @include slide;
         order: 6;
     }
 
     .slide7 {
         background-image: url("img/slide8.jpg");
-        @include slide;
         order: 7;
     }
 
     .slide8 {
         background-image: url("img/slide9.jpg");
-        @include slide;
         order: 8;
     }
 
     .slide9 {
         background-image: url("img/slide10.jpg");
-        @include slide;
         order: 9;
     }
 
     .slide10 {
         background-image: url("img/slide11.jpg");
-        @include slide;
         order: 10;
     }
 
     .slide102 {
         background-image: url("img/slide11.jpg");
-        @include slide;
         order: -1;
     }
 
     .slide02 {
         background-image: url("img/slide1.jpg");
-        @include slide;
         order: 11;
     }
 
@@ -654,5 +645,47 @@ nav {
         margin: 0;
     }
 
+
+}
+
+
+
+@media screen and (max-width: 1236px) {
+
+
+    .slideShow {
+        left: -925px;
+
+        .slideItem {
+            width: 600px;
+            background-size: contain;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+    .slideShow {
+        left: 0px;
+
+        .slideItem {
+            display: none;
+            min-width: auto;
+        }
+
+        .slide0 {
+            display: block;
+            width: 100%;
+        }
+
+
+    }
+
+    .counter {
+        display: none;
+    }
 
 }
