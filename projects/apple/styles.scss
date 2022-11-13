@@ -93,7 +93,7 @@ body {
 
 .header {
     padding-left: 15%;
-    position: fixed;
+    // position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
     color: #cfcccc;
     height: 40px;
@@ -111,6 +111,29 @@ body {
         font-size: 11px;
         height: 40px;
         align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+
+        .main-nav-exit {
+            display: none;
+        }
+    }
+
+    .main-nav-hamburger {
+        display: none;
+
+        path {
+            fill: $offWhite;
+
+            &:hover {
+                fill: white;
+            }
+        }
+
     }
 }
 
@@ -674,6 +697,7 @@ nav {
         .slideItem {
             display: none;
             min-width: auto;
+            margin-right: 0px;
         }
 
         .slide0 {
@@ -681,11 +705,81 @@ nav {
             width: 100%;
         }
 
+        .slideText {
+            .stream {
+                width: 100px;
+                font-size: 11px;
+                padding: 6px;
+            }
+
+            p {
+                display: none;
+            }
+        }
+
 
     }
 
     .counter {
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        .hero-img {
+            width: 100%;
+            height: 700px;
+            background-size: 700px 450px;
+        }
+
+
+    }
+
+    .promos {
+        display: flex;
+        flex-direction: column;
+
+        .promo-container {
+            width: 100%;
+
+            h2 {
+                font-size: 11px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+
+            a {
+                font-size: 11px;
+            }
+        }
+
+    }
+
+    .header {
+        .main-nav {
+            display: none;
+            flex-direction: column;
+        }
+
+        .main-nav-hamburger {
+            display: inline;
+
+        }
+
+        .main-nav-show {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 1);
+            position: absolute;
+            top: 0;
+            margin-top: 0;
+            height: 200px;
+            width: 600px;
+        }
     }
 
 }

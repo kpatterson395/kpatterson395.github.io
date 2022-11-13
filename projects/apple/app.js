@@ -50,6 +50,8 @@ function hideSlide() {
 
 
 $(document).ready(function () {
+
+
     counters.forEach((counter) => {
         $(counter).on("click", function () {
             updateCounterColor("grey")
@@ -113,6 +115,18 @@ $(document).ready(function () {
 
     $(".columnTitle").on("click", function () {
         $(this).next().toggleClass("showItem")
+    })
+
+    $(".main-nav-hamburger").on("click", function () {
+        $(".main-nav").addClass("main-nav-show ")
+        $(".main-nav-exit").css({ display: "inline" })
+        $(this).css({ display: "none" })
+    })
+
+    $(".main-nav-exit").on("click", function () {
+        $(".main-nav").removeClass("main-nav-show ")
+        $(this).css({ display: "none" })
+        $(".main-nav-hamburger").css({ display: "block" })
     })
     // $(window).scroll(function () {
     //     if ($(".slideShowContainer").isOnScreen()) {
