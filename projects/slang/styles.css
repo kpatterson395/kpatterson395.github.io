@@ -204,6 +204,7 @@ svg * {
     padding: 1em 3em;
     color: #72777d;
     font-size: 14px;
+    width: 300px;
 }
 
 .flex-item img {
@@ -362,11 +363,12 @@ a:hover {
 }
 
 .stats-flex {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     margin: 180px 15%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .stats-flex img {
@@ -378,6 +380,7 @@ a:hover {
     padding: 0 25px;
     border-right: 1px solid #72777d;
     color: #72777d;
+    width: 200px;
 }
 
 .stats-item h2 {
@@ -397,7 +400,7 @@ a:hover {
 
 .slideshow {
     /* width: 90%; */
-    margin: 100px auto;
+    /* margin: 100px auto; */
     display: flex;
     flex-direction: row;
     justify-content: center
@@ -534,8 +537,10 @@ a:hover {
     color: #f1f3f5;
     background-color: #202327;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     padding: 50px 50px;
+    justify-content: space-between;
 }
 
 .footer h3 {
@@ -547,7 +552,8 @@ a:hover {
 }
 
 .footer div {
-    padding-left: 75px;
+    padding-left: 50px;
+    padding-right: 25px;
 }
 
 .footer ul {
@@ -572,6 +578,7 @@ a:hover {
     color: #5a6068;
     text-align: right;
     width: 250px;
+    border-left: 1px solid grey;
 }
 
 .contact img {
@@ -588,4 +595,70 @@ a:hover {
     justify-content: flex-end;
     align-content: center;
     align-items: center;
+}
+
+
+@media screen and (max-width: 1360px) {
+    #heroImg {
+        display: none;
+    }
+
+    #hero {
+        width: auto;
+        text-align: center;
+    }
+
+    #hero h1 {
+        width: 100%
+    }
+
+    #hero p {
+        width: 100%
+    }
+
+    .contact {
+        width: 100%;
+        border-left: none;
+        text-align: start;
+        border-top: 1px solid grey;
+        padding-top: 5px;
+    }
+
+    .contact br {
+        display: none;
+    }
+
+    .contact p {
+        display: inline-flex;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        height: 600px;
+    }
+
+    .stats-item {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .phone-img {
+        display: none;
+    }
+
+    .phone-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .reference {
+        height: 700px;
+    }
 }
