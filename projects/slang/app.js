@@ -3,7 +3,9 @@ const back = document.querySelector("#toggle-back")
 const header = document.querySelector(".header")
 const solutions = document.querySelector("#solutions")
 const hide = document.querySelector(".hide")
-
+const hamburger = document.querySelector(".main-nav-hamburger")
+const nav = document.querySelectorAll("nav")
+const exitNav = document.querySelector(".exit")
 
 let firstSlide = 0
 let lastSlide = 2
@@ -101,3 +103,27 @@ hide.addEventListener("mouseleave", function () {
 header.addEventListener("mouseleave", function () {
     hide.style.display = "none"
 })
+
+hamburger.addEventListener("click", function () {
+    nav[0].style.display = "block"
+    hamburger.style.display = "none"
+})
+
+exitNav.addEventListener("click", function () {
+    nav[0].style.display = "none"
+    hamburger.style.display = "inline"
+})
+
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 770) {
+        hamburger.style.display = "none"
+        nav[0].style.display = "block"
+    }
+});
+
+window.addEventListener("resize", function () {
+    if (window.innerWidth < 770) {
+        hamburger.style.display = "block"
+        nav[0].style.display = "none"
+    }
+});

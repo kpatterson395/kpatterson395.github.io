@@ -10,12 +10,19 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: #5a6068;
     font-size: 16px;
     font-weight: 500;
+}
 
+.main-nav-hamburger {
+    display: none;
+}
+
+.main-nav-hamburger svg path {
+    fill: #0577d6;
 }
 
 nav span {
@@ -26,6 +33,10 @@ nav span img {
     height: 12px;
     padding: 10px 5px;
 
+}
+
+.exit {
+    display: none;
 }
 
 nav span:hover {
@@ -191,12 +202,13 @@ svg * {
 }
 
 .flex-container {
-    max-width: 80%;
+    width: 80%;
     position: relative;
     display: inline-flex;
     flex-direction: row;
     margin: 80px 10%;
     justify-content: space-around;
+    align-items: center;
 }
 
 .flex-item {
@@ -399,9 +411,8 @@ a:hover {
 }
 
 .slideshow {
-    /* width: 90%; */
-    /* margin: 100px auto; */
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center
 }
@@ -597,7 +608,7 @@ a:hover {
     align-items: center;
 }
 
-
+/* Responsive Styles */
 @media screen and (max-width: 1360px) {
     #heroImg {
         display: none;
@@ -639,6 +650,15 @@ a:hover {
         flex-wrap: wrap;
     }
 
+    .orgs .flex-container {
+        flex-direction: column;
+
+    }
+
+    .orgs .flex-2-item img {
+        width: 100%;
+    }
+
     .footer {
         height: 600px;
     }
@@ -659,6 +679,32 @@ a:hover {
     }
 
     .reference {
-        height: 700px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .headerContainer {
+        align-items: flex-start;
+    }
+
+    #solutions {
+        padding: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav span {
+        display: block;
+    }
+
+    .main-nav-hamburger {
+        display: inline;
+    }
+
+    .exit {
+        display: block;
     }
 }
