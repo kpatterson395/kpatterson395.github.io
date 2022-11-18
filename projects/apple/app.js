@@ -126,7 +126,18 @@ $(document).ready(function () {
     $(".main-nav-exit").on("click", function () {
         $(".main-nav").removeClass("main-nav-show ")
         $(this).css({ display: "none" })
-        $(".main-nav-hamburger").css({ display: "block" })
+        $(".main-nav-hamburger").css({ display: "inline" })
+    })
+
+    $(window).on("resize", function () {
+        if ($(window).width() > 600) {
+            $(".main-nav").removeClass("main-nav-show ")
+            $(".main-nav-exit").css({ display: "none" })
+            $(".main-nav-hamburger").css({ display: "none" })
+        }
+        else if ($(window).width() < 600) {
+            $(".main-nav-hamburger").css({ display: "inline" })
+        }
     })
     // $(window).scroll(function () {
     //     if ($(".slideShowContainer").isOnScreen()) {

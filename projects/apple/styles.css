@@ -178,7 +178,7 @@ nav svg:hover rect {
   text-align: center;
   color: white;
   bottom: 50px;
-  width: 450px;
+  max-width: 450px;
 }
 .gift-container .gift-text h2 {
   font-size: 56px;
@@ -841,7 +841,7 @@ nav svg:hover rect {
   .hero .hero-img {
     width: 100%;
     height: 700px;
-    background-size: 500px 325px;
+    background-size: 700px 450px;
   }
   .promos {
     display: flex;
@@ -861,10 +861,6 @@ nav svg:hover rect {
   }
   .header .main-nav {
     display: none;
-    flex-direction: column;
-  }
-  .header .main-nav-hamburger {
-    display: inline;
   }
   .header .main-nav-show {
     display: flex;
@@ -875,6 +871,7 @@ nav svg:hover rect {
     margin-top: 0;
     height: 200px;
     width: 600px;
+    z-index: 2;
   }
 }
 

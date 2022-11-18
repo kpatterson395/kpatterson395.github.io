@@ -239,7 +239,7 @@ nav {
         @include heroText;
         color: white;
         bottom: 50px;
-        width: 450px;
+        max-width: 450px;
 
         a {
             color: $linkColor;
@@ -762,12 +762,6 @@ nav {
     .header {
         .main-nav {
             display: none;
-            flex-direction: column;
-        }
-
-        .main-nav-hamburger {
-            display: inline;
-
         }
 
         .main-nav-show {
@@ -779,6 +773,7 @@ nav {
             margin-top: 0;
             height: 200px;
             width: 600px;
+            z-index: 2;
         }
     }
 
