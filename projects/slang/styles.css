@@ -1,3 +1,7 @@
+/* * {
+    outline: 1px solid red;
+} */
+
 body {
     font-family: larsseit, sans-serif;
     box-sizing: border-box;
@@ -19,6 +23,7 @@ body {
 
 .main-nav-hamburger {
     display: none;
+    margin: 0;
 }
 
 .main-nav-hamburger svg path {
@@ -253,6 +258,13 @@ svg * {
     margin: 1em;
 }
 
+.flex-2-item a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
 .orgs {
     background-color: #f9fafb;
     padding-bottom: 60px;
@@ -336,10 +348,14 @@ a:hover {
     cursor: pointer;
 }
 
+.phone-flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 .stars {
-    display: inline-block;
-    margin-right: 150px;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 .stars img {
@@ -378,8 +394,8 @@ a:hover {
     width: 80%;
     display: flex;
     flex-direction: row;
-    margin: 180px 15%;
-    justify-content: space-between;
+    margin: 180px auto;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -425,7 +441,7 @@ a:hover {
 }
 
 .slide {
-    width: 350px;
+    max-width: 350px;
     display: none;
     align-items: flex-end;
     color: #72777d;
@@ -527,7 +543,7 @@ a:hover {
 }
 
 .action div {
-    width: 500px;
+    max-width: 500px;
     color: #4a4e55;
     font-weight: 600;
 }
@@ -543,8 +559,19 @@ a:hover {
     cursor: pointer;
 }
 
+.logo-container {
+    height: 32px;
+}
+
+.logo-container svg {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    fill: rgb(255, 255, 255);
+}
+
 .footer {
-    height: 350px;
+    height: auto;
     color: #f1f3f5;
     background-color: #202327;
     display: flex;
@@ -659,9 +686,7 @@ a:hover {
         width: 100%;
     }
 
-    .footer {
-        height: 600px;
-    }
+
 
     .stats-item {
         border: none;
@@ -669,6 +694,14 @@ a:hover {
 }
 
 @media screen and (max-width: 1300px) {
+    .phone-flex {
+        justify-content: center;
+    }
+
+    .stars {
+        margin: auto;
+    }
+
     .phone-img {
         display: none;
     }
@@ -676,6 +709,7 @@ a:hover {
     .phone-text {
         width: 100%;
         text-align: center;
+        right: auto;
     }
 
     .reference {
@@ -684,6 +718,10 @@ a:hover {
 }
 
 @media screen and (max-width: 770px) {
+    header {
+        padding: 15px 0;
+    }
+
     .headerContainer {
         align-items: flex-start;
     }
@@ -706,5 +744,62 @@ a:hover {
 
     .exit {
         display: block;
+    }
+
+    #hero h1 {
+        font-size: 30px;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    .slideshow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle {
+        transform: rotate(90deg);
+    }
+
+    .action button {
+        padding: 10px;
+        border-radius: 25px;
+        font-size: 12px;
+        height: 50px;
+        margin-top: 10px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .phone-container {
+        height: 500px;
+    }
+
+    #hero {
+        margin: 0;
+        padding: 50px;
+    }
+
+    #hero button {
+        padding: 0.5em;
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .reference {
+        padding: 30px;
+    }
+
+    .reference h1 {
+        font-size: 20px;
+    }
+
+    .action {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
     }
 }
