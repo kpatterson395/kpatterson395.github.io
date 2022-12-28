@@ -280,8 +280,8 @@ a {
 
 }
 
-.dg-proj {
-	background: url("./img/DGclone.png");
+.tictactoe-proj {
+	background: url("./img/tictactoe.png");
 	@include grid-cell(1, 2, 2);
 
 	@media screen and (max-width: 375px) {

@@ -240,8 +240,8 @@ a:hover {
   }
 }
 
-.dg-proj {
-  background: url("./img/DGclone.png");
+.tictactoe-proj {
+  background: url("./img/tictactoe.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -251,7 +251,7 @@ a:hover {
   grid-row: 2;
 }
 @media screen and (max-width: 375px) {
-  .dg-proj {
+  .tictactoe-proj {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
