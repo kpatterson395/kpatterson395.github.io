@@ -262,8 +262,8 @@ a:hover {
   }
 }
 
-.budget-proj {
-  background: url("./img/iBudget.png");
+.slang-proj {
+  background: url("./img/slang.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -273,7 +273,7 @@ a:hover {
   grid-row: 2;
 }
 @media screen and (max-width: 375px) {
-  .budget-proj {
+  .slang-proj {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 10px;

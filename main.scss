@@ -293,8 +293,8 @@ a {
 
 
 
-.budget-proj {
-	background: url("./img/iBudget.png");
+.slang-proj {
+	background: url("./img/slang.png");
 	@include grid-cell(2, 3, 2);
 
 	@media screen and (max-width: 375px) {
