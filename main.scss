@@ -314,8 +314,8 @@ a {
 
 
 
-.goats-proj {
-	background: url("./img/Goatstagram.png");
+.match-proj {
+	background: url("./img/matching-game.png");
 	@include grid-cell(2, 3, 3);
 
 	@media screen and (max-width: 375px) {
