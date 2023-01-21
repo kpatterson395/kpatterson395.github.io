@@ -202,14 +202,11 @@ a {
 	text-align: center;
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 50px;
-	grid-auto-rows: 300px;
+	grid-auto-rows: 200px;
 
 	.project-link {
 		width: 100%;
-		height: 100%;
-
 
 		.project-desc {
 			display: inline-block;
@@ -256,7 +253,7 @@ a {
 	background: url("./img/weather-app.png");
 	@include grid-cell(1, 2, 1);
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 750px) {
 		@include grid-cell(1, 2, 1);
 	}
 
@@ -266,7 +263,7 @@ a {
 	background: url("./img/SimonSays.png");
 	@include grid-cell(2, 3, 1);
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 750px) {
 		@include grid-cell(2, 2, 1);
 	}
 
@@ -276,7 +273,7 @@ a {
 	background: url("./img/apple.png");
 	@include grid-cell(3, 3, 1);
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 750px) {
 		@include grid-cell(1, 2, 2);
 	}
 
@@ -286,7 +283,7 @@ a {
 	background: url("./img/tictactoe.png");
 	@include grid-cell(1, 2, 2);
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 750px) {
 		@include grid-cell(2, 2, 2);
 	}
 
@@ -299,18 +296,9 @@ a {
 	background: url("./img/slang.png");
 	@include grid-cell(2, 3, 2);
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 750px) {
 		@include grid-cell(1, 2, 3);
 		;
-	}
-}
-
-.quiz-proj {
-	background: url("./img/QuizCreator.png");
-	@include grid-cell(3, 3, 2);
-
-	@media screen and (max-width: 375px) {
-		@include grid-cell(2, 2, 3);
 	}
 }
 
@@ -318,10 +306,10 @@ a {
 
 .match-proj {
 	background: url("./img/matching-game.png");
-	@include grid-cell(2, 3, 3);
+	@include grid-cell(3, 3, 2);
 
-	@media screen and (max-width: 375px) {
-		@include grid-cell(1, 2, 4);
+	@media screen and (max-width: 750px) {
+		@include grid-cell(2, 2, 3);
 	}
 }
 
