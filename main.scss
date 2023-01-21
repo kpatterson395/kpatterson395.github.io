@@ -204,7 +204,7 @@ a {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 50px;
-	grid-auto-rows: 200px;
+	grid-auto-rows: 300px;
 
 	.project-link {
 		width: 100%;
@@ -252,8 +252,8 @@ a {
 	}
 }
 
-.calc-proj {
-	background: url("./img/JScalc.png");
+.weather-proj {
+	background: url("./img/weather-app.png");
 	@include grid-cell(1, 2, 1);
 
 	@media screen and (max-width: 375px) {
@@ -324,6 +324,8 @@ a {
 		@include grid-cell(1, 2, 4);
 	}
 }
+
+
 
 
 

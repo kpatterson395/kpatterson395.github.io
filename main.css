@@ -133,7 +133,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
-  grid-auto-rows: 200px;
+  grid-auto-rows: 300px;
 }
 #project-list .project-link {
   width: 100%;
@@ -174,8 +174,8 @@ a:hover {
   }
 }
 
-.calc-proj {
-  background: url("./img/JScalc.png");
+.weather-proj {
+  background: url("./img/weather-app.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -186,7 +186,7 @@ a:hover {
   grid-row: 1;
 }
 @media screen and (max-width: 375px) {
-  .calc-proj {
+  .weather-proj {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
