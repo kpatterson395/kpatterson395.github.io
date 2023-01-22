@@ -260,8 +260,8 @@ a {
 
 }
 
-.simon-proj {
-	background: url("./img/SimonSays.png");
+.blog-proj {
+	background: url("./img/blogland.png");
 	@include grid-cell(2, 3, 1);
 
 	@media screen and (max-width: 750px) {

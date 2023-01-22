@@ -197,8 +197,8 @@ a:hover {
   }
 }
 
-.simon-proj {
-  background: url("./img/SimonSays.png");
+.blog-proj {
+  background: url("./img/blogland.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -209,7 +209,7 @@ a:hover {
   grid-row: 1;
 }
 @media screen and (max-width: 750px) {
-  .simon-proj {
+  .blog-proj {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
