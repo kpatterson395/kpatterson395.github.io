@@ -173,8 +173,8 @@ a:hover {
   }
 }
 
-.weather-proj {
-  background: url("./img/weather-app.png");
+.todo-proj {
+  background: url("./img/todoapp.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -185,7 +185,7 @@ a:hover {
   grid-row: 1;
 }
 @media screen and (max-width: 750px) {
-  .weather-proj {
+  .todo-proj {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

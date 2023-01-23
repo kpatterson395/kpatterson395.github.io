@@ -250,8 +250,8 @@ a {
 	}
 }
 
-.weather-proj {
-	background: url("./img/weather-app.png");
+.todo-proj {
+	background: url("./img/todoapp.png");
 	@include grid-cell(1, 2, 1);
 
 	@media screen and (max-width: 750px) {
